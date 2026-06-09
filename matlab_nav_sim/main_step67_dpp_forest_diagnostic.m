@@ -11,6 +11,15 @@ params = get_forest_geometry_mainline_params();
 params.random_seed = seed;
 scenario = generate_step9_scenario(params);
 
+% Every DPP run below (3 named runs + the queue-dynamics run + the V sweep) is on
+% this ONE scenario, so build the action-table cache ONCE and reuse it -- the
+% tables are invariant to V / horizon. dpp_parallel_tables parallelises the single
+% build across slots IF a pool already exists; it does NOT force one to start, so
+% the diagnostic stays fast when run standalone.
+cache_params = params;
+cache_params.dpp_parallel_tables = true;
+cache = build_dpp_action_tables(scenario, cache_params);
+
 % --- methods ---
 results = {};
 results{end+1} = run_step9_baseline_fixed(scenario, params);
@@ -18,13 +27,13 @@ results{end+1} = run_step9_baseline_link_delayaware(scenario, params);
 results{end+1} = run_step9_proposed_method(scenario, params);            % frozen-lambda v6
 
 p1 = params; p1.dpp_V = 1.0;
-r = run_step9_proposed_method_dpp(scenario, p1); r.name = "DPP-V1.0"; results{end+1} = r;
+r = run_step9_proposed_method_dpp(scenario, p1, cache); r.name = "DPP-V1.0"; results{end+1} = r;
 
 p2 = params; p2.dpp_V = 0.5;
-r = run_step9_proposed_method_dpp(scenario, p2); r.name = "DPP-V0.5"; results{end+1} = r;
+r = run_step9_proposed_method_dpp(scenario, p2, cache); r.name = "DPP-V0.5"; results{end+1} = r;
 
 p3 = params; p3.dpp_V = 1.0; p3.dpp_horizon = 3;
-r = run_step9_proposed_method_dpp(scenario, p3); r.name = "PDPP-H3"; results{end+1} = r;
+r = run_step9_proposed_method_dpp(scenario, p3, cache); r.name = "PDPP-H3"; results{end+1} = r;
 
 T = evaluate_step9_metrics(scenario, results);
 disp('=== Forest-geometry overall (seed 7) ===');
@@ -53,7 +62,7 @@ disp('=== Hard-stage timely (where the method matters) ===');
 disp(Ts);
 
 % --- DPP queue dynamics on hard scene: does reliability bind now? ---
-rd = run_step9_proposed_method_dpp(scenario, p1);
+rd = run_step9_proposed_method_dpp(scenario, p1, cache);
 fprintf(['DPP (V=1) on forest scene: Qbar_reliability=%.3f  Qbar_protection=%.3f  ' ...
     'reqReliabilityMean=%.3f  achievedTimelyMean=%.3f\n'], ...
     mean(rd.policy.queue_trace(:, 1)), mean(rd.policy.queue_trace(:, 2)), ...
@@ -74,7 +83,7 @@ Qbar_Reliability = zeros(nV, 1);
 Qbar_Protection = zeros(nV, 1);
 for i = 1:nV
     p = params; p.dpp_V = V_grid(i);
-    rr = run_step9_proposed_method_dpp(scenario, p);
+    rr = run_step9_proposed_method_dpp(scenario, p, cache);
     TimelyRate(i) = mean(rr.delivery.deadline_hit);
     PosDegTimely(i) = mean(rr.delivery.deadline_hit(idx_pd));
     AvgTxCost(i) = mean(rr.delivery.tx_cost);

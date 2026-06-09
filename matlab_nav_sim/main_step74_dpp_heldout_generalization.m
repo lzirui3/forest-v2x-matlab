@@ -32,6 +32,8 @@ v6T = zeros(nR, 1); dppT = zeros(nR, 1); pdppT = zeros(nR, 1);
 v6C = zeros(nR, 1); dppC = zeros(nR, 1); pdppC = zeros(nR, 1);
 dT = zeros(nR, 1); pT = zeros(nR, 1); dC = zeros(nR, 1);
 
+ensure_dpp_pool();   % use all physical cores for the per-regime seed-parallel sweep
+
 for ri = 1:nR
     Regime(ri) = regimes{ri, 1};
     [~, params] = evalc('feval(regimes{ri, 2})');
@@ -46,10 +48,12 @@ for ri = 1:nR
     parfor si = 1:num_seeds
         sc = scenarios{si};
         p_pdpp = params; p_pdpp.dpp_horizon = 3;
+        % The two DPP variants share one rng-free table cache for this seed.
+        cache = build_dpp_action_tables(sc, params);
         runners = { ...
             @() run_step9_proposed_method(sc, params), ...
-            @() run_step9_proposed_method_dpp(sc, params), ...
-            @() run_step9_proposed_method_dpp(sc, p_pdpp)};
+            @() run_step9_proposed_method_dpp(sc, params, cache), ...
+            @() run_step9_proposed_method_dpp(sc, p_pdpp, cache)};
         tt = zeros(1, nM); cc = zeros(1, nM);
         for mi = 1:nM
             rng(si);                      % common random numbers across methods

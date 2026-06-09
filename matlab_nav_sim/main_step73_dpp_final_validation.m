@@ -20,18 +20,23 @@ Timely = zeros(num_seeds, nM);
 Cost = zeros(num_seeds, nM);
 PosDeg = zeros(num_seeds, nM);
 
+ensure_dpp_pool();   % use all physical cores for the seed-parallel sweep
+
 parfor si = 1:num_seeds
     sc = scenarios{si};
     idx_pd = (sc.t >= 68) & (sc.t < 90);
     p_pdpp = params; p_pdpp.dpp_horizon = 3;
     sd = seeds(si);
+    % Both DPP variants share one rng-free table cache for this seed (invariant to
+    % dpp_horizon; building it does not touch the common-random-numbers stream).
+    cache = build_dpp_action_tables(sc, params);
 
     runners = { ...
         @() run_step9_baseline_fixed(sc, params), ...
         @() run_step9_baseline_link_delayaware(sc, params), ...
         @() run_step9_proposed_method(sc, params), ...
-        @() run_step9_proposed_method_dpp(sc, params), ...
-        @() run_step9_proposed_method_dpp(sc, p_pdpp)};
+        @() run_step9_proposed_method_dpp(sc, params, cache), ...
+        @() run_step9_proposed_method_dpp(sc, p_pdpp, cache)};
 
     tt = zeros(1, nM); cc = zeros(1, nM); pp = zeros(1, nM);
     for mi = 1:nM
