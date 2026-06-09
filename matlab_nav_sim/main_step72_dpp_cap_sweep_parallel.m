@@ -17,9 +17,14 @@ end
 v6T = zeros(num_seeds, 1); v6C = zeros(num_seeds, 1);
 dppT = zeros(num_seeds, nC); dppC = zeros(num_seeds, nC);
 
+ensure_dpp_pool();   % use all physical cores for the seed-parallel sweep
+
 parfor si = 1:num_seeds
     sc = scenarios{si};
     sd = seeds(si);
+    % Tables are invariant to the cap; build once per seed (rng-free, so it does
+    % not perturb the common-random-numbers stream) and reuse across the sweep.
+    cache = build_dpp_action_tables(sc, params);
     rng(sd);                                  % common random numbers
     r6 = run_step9_proposed_method(sc, params);
     v6T(si) = mean(r6.delivery.deadline_hit);
@@ -28,7 +33,7 @@ parfor si = 1:num_seeds
     for ci = 1:nC
         p = params; p.dpp_V = 2.0; p.dpp_queue_max = caps(ci);
         rng(sd);                              % same draws as v6 (CRN)
-        r = run_step9_proposed_method_dpp(sc, p);
+        r = run_step9_proposed_method_dpp(sc, p, cache);
         tt(ci) = mean(r.delivery.deadline_hit);
         cc(ci) = mean(r.delivery.tx_cost);
     end

@@ -6,33 +6,54 @@ function main_step69_dpp_multiseed()
 num_seeds = 10;
 seeds = 1:num_seeds;
 
-methods = { ...
-    'Fixed',        @(sc, p) run_step9_baseline_fixed(sc, p); ...
-    'Link-delay',   @(sc, p) run_step9_baseline_link_delayaware(sc, p); ...
-    'v6 (frozen-lambda)', @(sc, p) run_step9_proposed_method(sc, p); ...
-    'DPP V1 cap10', @(sc, p) run_dpp(sc, p, 1.0, 10, 1); ...
-    'DPP V1 cap20', @(sc, p) run_dpp(sc, p, 1.0, 20, 1); ...
-    'PDPP H3 cap10', @(sc, p) run_dpp(sc, p, 1.0, 10, 3) };
-nM = size(methods, 1);
+method_names = ["Fixed"; "Link-delay"; "v6 (frozen-lambda)"; ...
+    "DPP V1 cap10"; "DPP V1 cap20"; "PDPP H3 cap10"];
+nM = numel(method_names);
 
 Timely = zeros(num_seeds, nM);
 Cost = zeros(num_seeds, nM);
 PosDeg = zeros(num_seeds, nM);
 
-for si = 1:num_seeds
-    params = get_forest_geometry_mainline_params();
+% Parallelise over seeds. generate_step9_scenario reseeds rng(seed) internally,
+% so each seed's random stream is independent of iteration order -> the parfor
+% result is bit-identical to the original serial loop. The three DPP variants in
+% each seed share ONE rng-free action-table cache instead of rebuilding it.
+ensure_dpp_pool();
+
+% Base params are deterministic and seed-independent: fetch once (evalc, which is
+% disallowed inside parfor, only suppresses the calibration printout here) and
+% broadcast. Each seed's scenario is built INSIDE the parfor so that
+% generate_step9_scenario's internal rng(seed) reset reproduces the original
+% serial loop's random stream -> the parfor result is bit-identical.
+[~, base_params] = evalc('get_forest_geometry_mainline_params()');
+
+parfor si = 1:num_seeds
+    params = base_params;
     params.random_seed = seeds(si);
     scenario = generate_step9_scenario(params);
     idx_pd = (scenario.t >= 68) & (scenario.t < 90);
+    cache = build_dpp_action_tables(scenario, params);
+
+    res = { ...
+        run_step9_baseline_fixed(scenario, params), ...
+        run_step9_baseline_link_delayaware(scenario, params), ...
+        run_step9_proposed_method(scenario, params), ...
+        run_dpp(scenario, params, 1.0, 10, 1, cache), ...
+        run_dpp(scenario, params, 1.0, 20, 1, cache), ...
+        run_dpp(scenario, params, 1.0, 10, 3, cache)};
+
+    tt = zeros(1, nM); cc = zeros(1, nM); pp = zeros(1, nM);
     for mi = 1:nM
-        r = methods{mi, 2}(scenario, params);
-        Timely(si, mi) = mean(r.delivery.deadline_hit);
-        Cost(si, mi) = mean(r.delivery.tx_cost);
-        PosDeg(si, mi) = mean(r.delivery.deadline_hit(idx_pd));
+        tt(mi) = mean(res{mi}.delivery.deadline_hit);
+        cc(mi) = mean(res{mi}.delivery.tx_cost);
+        pp(mi) = mean(res{mi}.delivery.deadline_hit(idx_pd));
     end
+    Timely(si, :) = tt;
+    Cost(si, :) = cc;
+    PosDeg(si, :) = pp;
 end
 
-Method = string(methods(:, 1));
+Method = method_names;
 TimelyMean = mean(Timely)';
 TimelyStd = std(Timely)';
 CostMean = mean(Cost)';
@@ -56,12 +77,15 @@ fprintf('\nReading: if the timely gap is within noise (p>0.05) while DPP uses ON
 fprintf('instead of 5 frozen lambdas and carries a feasibility certificate, that is the result.\n');
 end
 
-function r = run_dpp(scenario, params, V, cap, H)
+function r = run_dpp(scenario, params, V, cap, H, cache)
 p = params;
 p.dpp_V = V;
 p.dpp_queue_max = cap;
 p.dpp_horizon = H;
-r = run_step9_proposed_method_dpp(scenario, p);
+if nargin < 6
+    cache = [];
+end
+r = run_step9_proposed_method_dpp(scenario, p, cache);
 end
 
 function [h, p] = local_ttest(d)

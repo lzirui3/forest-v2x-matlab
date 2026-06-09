@@ -12,6 +12,10 @@ params.random_seed = seed;
 scenario = generate_step9_scenario(params);
 idx_pd = (scenario.t >= 68) & (scenario.t < 90);
 
+% Action tables are invariant to (V, cap); build once and reuse across the whole
+% grid instead of rebuilding the dominant cost at each of the V x cap points.
+cache = build_dpp_action_tables(scenario, params);
+
 % --- v6 reference ---
 r6 = run_step9_proposed_method(scenario, params);
 v6_timely = mean(r6.delivery.deadline_hit);
@@ -37,7 +41,7 @@ for vi = 1:numel(V_grid)
         p = params;
         p.dpp_V = V_grid(vi);
         p.dpp_queue_max = cap_grid(ci);
-        r = run_step9_proposed_method_dpp(scenario, p);
+        r = run_step9_proposed_method_dpp(scenario, p, cache);
         tm = mean(r.delivery.deadline_hit);
         ct = mean(r.delivery.tx_cost);
         pd = mean(r.delivery.deadline_hit(idx_pd));

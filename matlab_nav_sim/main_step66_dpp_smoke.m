@@ -13,12 +13,17 @@ params = get_default_step9_mainline_params();
 params.random_seed = seed;
 scenario = generate_step9_scenario(params);
 
+% Build the consolidated action-table cache ONCE: the tables are invariant to
+% dpp_V / dpp_horizon, so the comparison run and both sweeps below reuse them
+% instead of rebuilding (the dominant cost) at every sweep point.
+cache = build_dpp_action_tables(scenario, params);
+
 % --- 1. Comparison vs baselines and the frozen-lambda v6 method ---
 results = {};
 results{end+1} = run_step9_baseline_fixed(scenario, params);
 results{end+1} = run_step9_baseline_link_only(scenario, params);
 results{end+1} = run_step9_proposed_method(scenario, params);          % frozen-lambda v6
-results{end+1} = run_step9_proposed_method_dpp(scenario, params);      % drift-plus-penalty (consolidated)
+results{end+1} = run_step9_proposed_method_dpp(scenario, params, cache); % drift-plus-penalty (consolidated)
 
 params_legacy5 = params;
 params_legacy5.dpp_constraint_mode = "legacy5";
@@ -45,7 +50,7 @@ idx_emg = scenario.msg_type == "emergency";
 for i = 1:nV
     p = params;
     p.dpp_V = V_grid(i);
-    r = run_step9_proposed_method_dpp(scenario, p);
+    r = run_step9_proposed_method_dpp(scenario, p, cache);
     TimelyRate(i) = mean(r.delivery.deadline_hit);
     EmergencyTimelyRate(i) = mean(r.delivery.deadline_hit(idx_emg));
     AvgTxCost(i) = mean(r.delivery.tx_cost);
@@ -76,7 +81,7 @@ for i = 1:nH
     p = params;
     p.dpp_V = 1.0;
     p.dpp_horizon = H_grid(i);
-    r = run_step9_proposed_method_dpp(scenario, p);
+    r = run_step9_proposed_method_dpp(scenario, p, cache);
     H_TimelyRate(i) = mean(r.delivery.deadline_hit);
     H_EmergencyTimelyRate(i) = mean(r.delivery.deadline_hit(idx_emg));
     H_AvgTxCost(i) = mean(r.delivery.tx_cost);
