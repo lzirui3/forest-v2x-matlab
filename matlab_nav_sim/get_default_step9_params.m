@@ -85,6 +85,11 @@ params.position_alpha_blind_scale = 0.22;
 params.position_alpha_min = 0.35;
 params.position_alpha_max = 0.95;
 
+% Inverse-variance (BLUE) positioning-fusion prior: the equivalent 1-sigma error
+% when NO position source is available. coarse_sigma is fused as
+% 1/sqrt(sum 1/sigma_i^2) over GNSS+RSU, clamped to this prior from above.
+params.position_prior_sigma_m = 5.5;
+
 % GNSS 独立噪声参数（与 sidelink 无线电链路解耦）
 params.position_gnss_independent_noise_std = 0.08;   % 电离层闪烁对 GNSS 置信度的扰动标准差
 params.position_gnss_independent_temporal_len = 12;  % 电离层闪烁时间相关长度（样本数）

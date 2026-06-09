@@ -164,19 +164,27 @@ end
 rsu_sigma = 10.0 ./ (1.0 + 3.0 * max(rssi_support_score_raw, 0.05));
 rsu_sigma = rsu_sigma .* (1.0 + 0.25 * blind_zone_gate .* (env_attenuation_raw - 1.0));
 
-if modules.use_gnss && modules.use_rsu
-    coarse_sigma = 0.68 * sigma_pos + 0.32 * rsu_sigma;
-elseif modules.use_gnss
-    coarse_sigma = 1.08 * sigma_pos + 0.35 * (1.0 - env_score);
-elseif modules.use_rsu
-    coarse_sigma = 0.92 * rsu_sigma + 0.55 * (1.0 - rsu_support_score);
-else
-    coarse_sigma = 1.20 * sigma_pos + 1.20;
+% Inverse-variance (BLUE / Gauss-Markov) fusion of the INDEPENDENT positioning
+% sources. The minimum-variance unbiased linear combination of unbiased estimates
+% with standard deviations sigma_i has fused variance 1 / sum_i(1/sigma_i^2). This
+% replaces the previous hand-picked convex blends (0.68/0.32, 1.08/0.35, ...) and
+% the four regime branches with a single DERIVED rule: GNSS (sigma_pos) and RSU
+% (rsu_sigma) are the two independent position estimators, so fusing them must
+% reduce uncertainty below either. A weak prior sigma covers the no-source case.
+prior_sigma = 5.5;
+if isfield(params, 'position_prior_sigma_m')
+    prior_sigma = params.position_prior_sigma_m;
 end
-
-coarse_sigma = coarse_sigma ...
-    - 0.42 * rsu_gain_gate ...
-    - 0.28 * env_correction_gate .* (0.65 + 0.35 * env_detectability);
+inv_var = zeros(N, 1);
+if modules.use_gnss
+    inv_var = inv_var + 1.0 ./ max(sigma_pos, 1.0e-3) .^ 2;
+end
+if modules.use_rsu
+    inv_var = inv_var + 1.0 ./ max(rsu_sigma, 1.0e-3) .^ 2;
+end
+coarse_sigma = 1.0 ./ sqrt(max(inv_var, 1.0 / prior_sigma ^ 2));
+% Blind zones genuinely inflate the residual error (real degradation, kept). RSU
+% presence already lowers the fused sigma through the inverse-variance term above.
 coarse_sigma = coarse_sigma + params.position_blind_zone_sigma_penalty * blind_zone_gate .* (1.0 - rsu_gain_gate);
 coarse_sigma = max(0.35, min(coarse_sigma, 5.5));
 
