@@ -1,0 +1,23 @@
+function T = build_sensitivity_table(results)
+%BUILD_SENSITIVITY_TABLE Convert sensitivity results struct array to table.
+
+rows = [];
+
+for i = 1:numel(results)
+    row = table( ...
+        results(i).param_name, ...
+        results(i).param_value, ...
+        results(i).full_rmse, ...
+        results(i).degraded_rmse, ...
+        results(i).outage_rmse, ...
+        results(i).recovery_rmse, ...
+        'VariableNames', {'Parameter', 'Value', 'FullRMSE_m', 'DegradedRMSE_m', 'OutageRMSE_m', 'RecoveryRMSE_m'});
+
+    if isempty(rows)
+        rows = row;
+    else
+        rows = [rows; row]; %#ok<AGROW>
+    end
+end
+
+T = rows;

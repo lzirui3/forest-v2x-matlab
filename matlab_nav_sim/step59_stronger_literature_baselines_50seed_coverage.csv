@@ -1,0 +1,129 @@
+Scene,Config,Method,RawSeeds,StageSeeds,RawRows,StageRows,ExpectedSeeds
+10014,Default,Link-delay-aware,50,50,50,300,50
+10014,Default,Confidence-heuristic,50,50,50,300,50
+10014,Default,Risk-constrained-v6,50,50,50,300,50
+10014,Default,Constrained Oracle,50,50,50,300,50
+10014,Default,DCC-like,50,50,50,300,50
+10014,Default,AoI-aware,50,50,50,300,50
+10014,Default,DCC-CBR-window,50,50,50,300,50
+10014,Default,AoI-greedy,50,50,50,300,50
+10014,ForestGeometry,Link-delay-aware,50,50,50,300,50
+10014,ForestGeometry,Confidence-heuristic,50,50,50,300,50
+10014,ForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10014,ForestGeometry,Constrained Oracle,50,50,50,300,50
+10014,ForestGeometry,DCC-like,50,50,50,300,50
+10014,ForestGeometry,AoI-aware,50,50,50,300,50
+10014,ForestGeometry,DCC-CBR-window,50,50,50,300,50
+10014,ForestGeometry,AoI-greedy,50,50,50,300,50
+10006,Default,Link-delay-aware,50,50,50,300,50
+10006,Default,Confidence-heuristic,50,50,50,300,50
+10006,Default,Risk-constrained-v6,50,50,50,300,50
+10006,Default,Constrained Oracle,50,50,50,300,50
+10006,Default,DCC-like,50,50,50,300,50
+10006,Default,AoI-aware,50,50,50,300,50
+10006,Default,DCC-CBR-window,50,50,50,300,50
+10006,Default,AoI-greedy,50,50,50,300,50
+10006,ForestGeometry,Link-delay-aware,50,50,50,300,50
+10006,ForestGeometry,Confidence-heuristic,50,50,50,300,50
+10006,ForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10006,ForestGeometry,Constrained Oracle,50,50,50,300,50
+10006,ForestGeometry,DCC-like,50,50,50,300,50
+10006,ForestGeometry,AoI-aware,50,50,50,300,50
+10006,ForestGeometry,DCC-CBR-window,50,50,50,300,50
+10006,ForestGeometry,AoI-greedy,50,50,50,300,50
+10011,Default,Link-delay-aware,50,50,50,300,50
+10011,Default,Confidence-heuristic,50,50,50,300,50
+10011,Default,Risk-constrained-v6,50,50,50,300,50
+10011,Default,Constrained Oracle,50,50,50,300,50
+10011,Default,DCC-like,50,50,50,300,50
+10011,Default,AoI-aware,50,50,50,300,50
+10011,Default,DCC-CBR-window,50,50,50,300,50
+10011,Default,AoI-greedy,50,50,50,300,50
+10011,ForestGeometry,Link-delay-aware,50,50,50,300,50
+10011,ForestGeometry,Confidence-heuristic,50,50,50,300,50
+10011,ForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10011,ForestGeometry,Constrained Oracle,50,50,50,300,50
+10011,ForestGeometry,DCC-like,50,50,50,300,50
+10011,ForestGeometry,AoI-aware,50,50,50,300,50
+10011,ForestGeometry,DCC-CBR-window,50,50,50,300,50
+10011,ForestGeometry,AoI-greedy,50,50,50,300,50
+10019,Default,Link-delay-aware,50,50,50,300,50
+10019,Default,Confidence-heuristic,50,50,50,300,50
+10019,Default,Risk-constrained-v6,50,50,50,300,50
+10019,Default,Constrained Oracle,50,50,50,300,50
+10019,Default,DCC-like,50,50,50,300,50
+10019,Default,AoI-aware,50,50,50,300,50
+10019,Default,DCC-CBR-window,50,50,50,300,50
+10019,Default,AoI-greedy,50,50,50,300,50
+10019,ForestGeometry,Link-delay-aware,50,50,50,300,50
+10019,ForestGeometry,Confidence-heuristic,50,50,50,300,50
+10019,ForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10019,ForestGeometry,Constrained Oracle,50,50,50,300,50
+10019,ForestGeometry,DCC-like,50,50,50,300,50
+10019,ForestGeometry,AoI-aware,50,50,50,300,50
+10019,ForestGeometry,DCC-CBR-window,50,50,50,300,50
+10019,ForestGeometry,AoI-greedy,50,50,50,300,50
+10017,Default,Link-delay-aware,50,50,50,300,50
+10017,Default,Confidence-heuristic,50,50,50,300,50
+10017,Default,Risk-constrained-v6,50,50,50,300,50
+10017,Default,Constrained Oracle,50,50,50,300,50
+10017,Default,DCC-like,50,50,50,300,50
+10017,Default,AoI-aware,50,50,50,300,50
+10017,Default,DCC-CBR-window,50,50,50,300,50
+10017,Default,AoI-greedy,50,50,50,300,50
+10017,ForestGeometry,Link-delay-aware,50,50,50,300,50
+10017,ForestGeometry,Confidence-heuristic,50,50,50,300,50
+10017,ForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10017,ForestGeometry,Constrained Oracle,50,50,50,300,50
+10017,ForestGeometry,DCC-like,50,50,50,300,50
+10017,ForestGeometry,AoI-aware,50,50,50,300,50
+10017,ForestGeometry,DCC-CBR-window,50,50,50,300,50
+10017,ForestGeometry,AoI-greedy,50,50,50,300,50
+10013,Default,Link-delay-aware,50,50,50,300,50
+10013,Default,Confidence-heuristic,50,50,50,300,50
+10013,Default,Risk-constrained-v6,50,50,50,300,50
+10013,Default,Constrained Oracle,50,50,50,300,50
+10013,Default,DCC-like,50,50,50,300,50
+10013,Default,AoI-aware,50,50,50,300,50
+10013,Default,DCC-CBR-window,50,50,50,300,50
+10013,Default,AoI-greedy,50,50,50,300,50
+10013,ForestGeometry,Link-delay-aware,50,50,50,300,50
+10013,ForestGeometry,Confidence-heuristic,50,50,50,300,50
+10013,ForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10013,ForestGeometry,Constrained Oracle,50,50,50,300,50
+10013,ForestGeometry,DCC-like,50,50,50,300,50
+10013,ForestGeometry,AoI-aware,50,50,50,300,50
+10013,ForestGeometry,DCC-CBR-window,50,50,50,300,50
+10013,ForestGeometry,AoI-greedy,50,50,50,300,50
+10007,Default,Link-delay-aware,50,50,50,300,50
+10007,Default,Confidence-heuristic,50,50,50,300,50
+10007,Default,Risk-constrained-v6,50,50,50,300,50
+10007,Default,Constrained Oracle,50,50,50,300,50
+10007,Default,DCC-like,50,50,50,300,50
+10007,Default,AoI-aware,50,50,50,300,50
+10007,Default,DCC-CBR-window,50,50,50,300,50
+10007,Default,AoI-greedy,50,50,50,300,50
+10007,ForestGeometry,Link-delay-aware,50,50,50,300,50
+10007,ForestGeometry,Confidence-heuristic,50,50,50,300,50
+10007,ForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10007,ForestGeometry,Constrained Oracle,50,50,50,300,50
+10007,ForestGeometry,DCC-like,50,50,50,300,50
+10007,ForestGeometry,AoI-aware,50,50,50,300,50
+10007,ForestGeometry,DCC-CBR-window,50,50,50,300,50
+10007,ForestGeometry,AoI-greedy,50,50,50,300,50
+10015,Default,Link-delay-aware,50,50,50,300,50
+10015,Default,Confidence-heuristic,50,50,50,300,50
+10015,Default,Risk-constrained-v6,50,50,50,300,50
+10015,Default,Constrained Oracle,50,50,50,300,50
+10015,Default,DCC-like,50,50,50,300,50
+10015,Default,AoI-aware,50,50,50,300,50
+10015,Default,DCC-CBR-window,50,50,50,300,50
+10015,Default,AoI-greedy,50,50,50,300,50
+10015,ForestGeometry,Link-delay-aware,50,50,50,300,50
+10015,ForestGeometry,Confidence-heuristic,50,50,50,300,50
+10015,ForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10015,ForestGeometry,Constrained Oracle,50,50,50,300,50
+10015,ForestGeometry,DCC-like,50,50,50,300,50
+10015,ForestGeometry,AoI-aware,50,50,50,300,50
+10015,ForestGeometry,DCC-CBR-window,50,50,50,300,50
+10015,ForestGeometry,AoI-greedy,50,50,50,300,50

@@ -1,0 +1,50 @@
+function row = evaluate_step18_lite_combo(params_in, scene_ids, seed_list)
+%EVALUATE_STEP18_LITE_COMBO Evaluate a reduced parameter combo.
+
+timely_gain_all = [];
+loss_reduction_all = [];
+cost_delta_all = [];
+posdeg_gain_all = [];
+posdeg_loss_reduction_all = [];
+
+for si = 1:numel(scene_ids)
+    scene_cfg = get_step9_v2xseq_config_by_scene(scene_ids(si));
+
+    for seed = seed_list
+        params = params_in;
+        params.scenario_input = scene_cfg;
+        params.random_seed = seed;
+
+        scenario = generate_step9_scenario(params);
+        linkd = run_step9_baseline_link_delayaware(scenario, params);
+        conf = run_step9_confidence_driven(scenario, params);
+
+        timely_gain_all(end + 1, 1) = mean(conf.delivery.deadline_hit) - mean(linkd.delivery.deadline_hit); %#ok<AGROW>
+        loss_reduction_all(end + 1, 1) = (1.0 - mean(linkd.delivery.delivered)) - (1.0 - mean(conf.delivery.delivered)); %#ok<AGROW>
+        cost_delta_all(end + 1, 1) = mean(conf.delivery.tx_cost) - mean(linkd.delivery.tx_cost); %#ok<AGROW>
+
+        idx = scenario.t >= 68 & scenario.t < 90;
+        posdeg_gain_all(end + 1, 1) = mean(conf.delivery.deadline_hit(idx)) - mean(linkd.delivery.deadline_hit(idx)); %#ok<AGROW>
+        posdeg_loss_reduction_all(end + 1, 1) = ...
+            (1.0 - mean(linkd.delivery.delivered(idx))) - (1.0 - mean(conf.delivery.delivered(idx))); %#ok<AGROW>
+    end
+end
+
+composite_score = mean(timely_gain_all) ...
+    + 2.0 * mean(posdeg_gain_all) ...
+    + 1.0 * mean(loss_reduction_all) ...
+    + 1.5 * mean(posdeg_loss_reduction_all) ...
+    - 0.10 * max(mean(cost_delta_all), 0.0);
+
+row = table( ...
+    params_in.confidence_regime_blind_threshold, ...
+    params_in.confidence_regime_qpos_threshold, ...
+    params_in.confidence_regime_hold_blind_threshold, ...
+    params_in.confidence_regime_hold_qpos_threshold, ...
+    mean(timely_gain_all), mean(loss_reduction_all), mean(cost_delta_all), ...
+    mean(posdeg_gain_all), mean(posdeg_loss_reduction_all), composite_score, ...
+    'VariableNames', { ...
+    'EnterBlindThr', 'EnterQPosThr', 'HoldBlindThr', 'HoldQPosThr', ...
+    'OverallTimelyGain', 'OverallLossReduction', 'OverallCostDelta', ...
+    'PosDegTimelyGain', 'PosDegLossReduction', 'CompositeScore'});
+end

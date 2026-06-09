@@ -1,0 +1,47 @@
+# External datasets and third-party repositories
+external_data/
+**/.git/
+
+# MATLAB generated files and caches
+*.asv
+*.m~
+*.fig
+*.mat
+__pycache__/
+*.pyc
+
+# Logs and temporary launcher output
+*.log
+*_stdout.log
+*_stderr.log
+temp_*
+tmp_*
+*.bak_*
+
+# Large/raw experiment outputs
+*_raw.csv
+*_stage_raw.csv
+*_samples.csv
+*_worker_*.csv
+*_case_worker_*.csv
+*_seed_worker_*.csv
+*_smoke_*
+*_smoke2_*
+
+# Large geospatial, point-cloud, and map data
+*.pcd
+*.tif
+*.tiff
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.gpkg
+*.json
+*.zip
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,6 @@
+Claim,AllowedWording,ForbiddenWording
+The final physical-layer evidence uses PER lookup.,PER-table-calibrated physical-layer lookup,real forest V2X measurement validation
+Forest geometry parameters are data-informed.,forestry-data-informed simulation,fully realistic forest propagation model
+Risk-constrained-v6 is frozen for Step49-58.,frozen-parameter validation,globally optimal or adaptively tuned after seeing test scenes
+DCC-like and AoI-aware are literature-inspired baselines.,ETSI-DCC-style and AoI-aware baseline comparisons,complete standards-compliant DCC stack or optimal AoI policy
+Negative cases 10019/10013 are applicability boundaries.,boundary cases caused by deadline-reliability/cost trade-off,hide in averages or tune away the negative cases

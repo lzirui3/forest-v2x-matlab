@@ -1,0 +1,201 @@
+Scene,SceneRole,GeometryType,DensityClass,VegetationClass,Config,Method,Metric,SigmoidMean,PerLookupMean,DeltaMean,DeltaCI95,MaxAbsDelta,DeltaPctOrPp
+10014,Primary,CurvedBlind,Medium,Dense,Default,Link-delay-aware,TimelyRate,0.987272727272727,0.970909090909091,-0.0163636363636364,0.0118192447074483,0.0363636363636364,-1.63636363636364
+10014,Primary,CurvedBlind,Medium,Dense,Default,Link-delay-aware,LossRate,0.0127272727272727,0.0290909090909091,0.0163636363636364,0.0118192447074483,0.0363636363636364,1.63636363636364
+10014,Primary,CurvedBlind,Medium,Dense,Default,Link-delay-aware,AvgDelay,0.012305803764191,0.0130059846505635,0.000700180886372459,8.94964505860242e-05,0.000778177839376566,5.6898427749184
+10014,Primary,CurvedBlind,Medium,Dense,Default,Link-delay-aware,AvgTxCost,2.03,2.03,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,Link-delay-aware,EmgTimely,1,0.966666666666667,-0.0333333333333333,0.0653333333333333,0.166666666666667,-3.33333333333333
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-heuristic,TimelyRate,0.996363636363636,1,0.00363636363636362,0.00436454535986818,0.00909090909090904,0.363636363636362
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-heuristic,LossRate,0.00363636363636362,0,-0.00363636363636362,0.00436454535986818,0.00909090909090904,-0.363636363636362
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-heuristic,AvgDelay,0.0123682381342252,0.0142591360240749,0.00189089788984974,0.000275279155519049,0.00238836336708994,15.2883367002554
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-heuristic,AvgTxCost,3.10945454545455,3.23923636363636,0.129781818181818,0.0367318090735832,0.183818181818181,4.17378084434567
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-heuristic,EmgTimely,1,1,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,Risk-constrained-v6,TimelyRate,0.992727272727273,0.996363636363636,0.00363636363636364,0.00436454535986821,0.00909090909090915,0.363636363636364
+10014,Primary,CurvedBlind,Medium,Dense,Default,Risk-constrained-v6,LossRate,0.00727272727272725,0.00363636363636362,-0.00363636363636364,0.00436454535986821,0.00909090909090915,-0.363636363636364
+10014,Primary,CurvedBlind,Medium,Dense,Default,Risk-constrained-v6,AvgDelay,0.0123399880016384,0.0134477657857613,0.00110777778412282,0.000221513700044141,0.00140725129005767,8.97713825958127
+10014,Primary,CurvedBlind,Medium,Dense,Default,Risk-constrained-v6,AvgTxCost,2.76890909090909,2.81981818181818,0.0509090909090908,0.0101266231226294,0.0636363636363639,1.83859741283078
+10014,Primary,CurvedBlind,Medium,Dense,Default,Risk-constrained-v6,EmgTimely,1,1,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,Constrained Oracle,TimelyRate,0.996363636363636,0.998181818181818,0.00181818181818181,0.00356363636363634,0.00909090909090904,0.181818181818181
+10014,Primary,CurvedBlind,Medium,Dense,Default,Constrained Oracle,LossRate,0.00363636363636362,0.00181818181818181,-0.00181818181818181,0.00356363636363634,0.00909090909090904,-0.181818181818181
+10014,Primary,CurvedBlind,Medium,Dense,Default,Constrained Oracle,AvgDelay,0.0141653580598378,0.0152009286497644,0.00103557058992666,0.000159228324109964,0.0013446975074599,7.31058534173413
+10014,Primary,CurvedBlind,Medium,Dense,Default,Constrained Oracle,AvgTxCost,2.87727272727273,2.97818181818182,0.100909090909091,0.0169413338727632,0.110909090909091,3.50710900473933
+10014,Primary,CurvedBlind,Medium,Dense,Default,Constrained Oracle,EmgTimely,1,0.966666666666667,-0.0333333333333333,0.0653333333333333,0.166666666666667,-3.33333333333333
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Link-delay-aware,TimelyRate,0.807272727272727,0.823636363636364,0.0163636363636364,0.0153277795667305,0.0454545454545455,1.63636363636364
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Link-delay-aware,LossRate,0.192727272727273,0.176363636363636,-0.0163636363636364,0.0153277795667305,0.0454545454545455,-1.63636363636364
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Link-delay-aware,AvgDelay,0.0125954604374067,0.0123372548271918,-0.000258205610214926,4.63733495160494e-05,0.000289062554967114,-2.04998945054913
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Link-delay-aware,AvgTxCost,2.14545454545455,2.14545454545455,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Link-delay-aware,EmgTimely,0,0,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-heuristic,TimelyRate,0.823636363636364,0.830909090909091,0.00727272727272725,0.00356363636363635,0.00909090909090915,0.727272727272725
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-heuristic,LossRate,0.176363636363636,0.169090909090909,-0.00727272727272725,0.00356363636363635,0.00909090909090915,-0.727272727272725
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-heuristic,AvgDelay,0.0130566627938183,0.0125920111205822,-0.000464651673236129,0.000277991775868134,0.001014763683312,-3.55873227771586
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-heuristic,AvgTxCost,3.59250909090909,3.58869090909091,-0.00381818181818199,0.00305518175190788,0.00636363636363679,-0.106281758001503
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-heuristic,EmgTimely,0,0,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Risk-constrained-v6,TimelyRate,0.818181818181818,0.829090909090909,0.0109090909090909,0.00872909071973641,0.0272727272727272,1.09090909090909
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Risk-constrained-v6,LossRate,0.181818181818182,0.170909090909091,-0.0109090909090909,0.00872909071973641,0.0272727272727272,-1.09090909090909
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Risk-constrained-v6,AvgDelay,0.0129444332280041,0.012576704805107,-0.000367728422897077,0.000105218304131958,0.000531455547542305,-2.84082289598846
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Risk-constrained-v6,AvgTxCost,3.32145454545455,3.31254545454545,-0.0089090909090908,0.0115667314325637,0.0318181818181817,-0.26822859645281
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Risk-constrained-v6,EmgTimely,0,0,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Constrained Oracle,TimelyRate,0.825454545454545,0.830909090909091,0.00545454545454545,0.0043645453598682,0.00909090909090915,0.545454545454545
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Constrained Oracle,LossRate,0.174545454545455,0.169090909090909,-0.00545454545454545,0.0043645453598682,0.00909090909090915,-0.545454545454545
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Constrained Oracle,AvgDelay,0.0144665926554802,0.0139645947380369,-0.000501997917443294,0.000323486380718304,0.00114355912848262,-3.47004944010177
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Constrained Oracle,AvgTxCost,3.44574545454545,3.42538181818182,-0.0203636363636367,0.024121106562888,0.0636363636363644,-0.590979125773031
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Constrained Oracle,EmgTimely,0,0,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Link-delay-aware,TimelyRate,1,1,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Link-delay-aware,LossRate,0,0,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Link-delay-aware,AvgDelay,0.0122313066670733,0.0122687527298997,3.74460628264482e-05,4.94813936081761e-05,0.000138428454471368,0.306149325216848
+10006,Reference,Mixed,Medium,Mixed,Default,Link-delay-aware,AvgTxCost,2.55,2.55,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Link-delay-aware,EmgTimely,1,1,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-heuristic,TimelyRate,1,1,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-heuristic,LossRate,0,0,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-heuristic,AvgDelay,0.0122313066670733,0.0122687527298997,3.74460628264482e-05,4.94813936081761e-05,0.000138428454471368,0.306149325216848
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-heuristic,AvgTxCost,2.67109090909091,2.67109090909091,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-heuristic,EmgTimely,1,1,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Risk-constrained-v6,TimelyRate,1,1,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Risk-constrained-v6,LossRate,0,0,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Risk-constrained-v6,AvgDelay,0.0122313066670733,0.0122687527298997,3.74460628264482e-05,4.94813936081761e-05,0.000138428454471368,0.306149325216848
+10006,Reference,Mixed,Medium,Mixed,Default,Risk-constrained-v6,AvgTxCost,3.15,3.15,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Risk-constrained-v6,EmgTimely,1,1,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Constrained Oracle,TimelyRate,1,1,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Constrained Oracle,LossRate,0,0,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Constrained Oracle,AvgDelay,0.0122313066670733,0.0122687527298997,3.74460628264482e-05,4.94813936081761e-05,0.000138428454471368,0.306149325216848
+10006,Reference,Mixed,Medium,Mixed,Default,Constrained Oracle,AvgTxCost,2.55,2.55,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Constrained Oracle,EmgTimely,1,1,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Link-delay-aware,TimelyRate,0.894545454545455,0.894545454545455,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Link-delay-aware,LossRate,0.103636363636364,0.103636363636364,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Link-delay-aware,AvgDelay,0.0126809728639156,0.0126809728639156,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Link-delay-aware,AvgTxCost,2.61545454545454,2.61545454545454,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Link-delay-aware,EmgTimely,0.894545454545455,0.894545454545455,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,TimelyRate,0.894545454545455,0.894545454545455,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,LossRate,0.101818181818182,0.101818181818182,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,AvgDelay,0.0128699564794225,0.0128699564794225,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,AvgTxCost,2.91638181818182,2.91638181818182,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,EmgTimely,0.894545454545455,0.894545454545455,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Risk-constrained-v6,TimelyRate,0.894545454545455,0.894545454545455,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Risk-constrained-v6,LossRate,0.103636363636364,0.103636363636364,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Risk-constrained-v6,AvgDelay,0.0126809728639156,0.0126809728639156,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Risk-constrained-v6,AvgTxCost,3.15,3.15,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Risk-constrained-v6,EmgTimely,0.894545454545455,0.894545454545455,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Constrained Oracle,TimelyRate,0.892727272727273,0.892727272727273,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Constrained Oracle,LossRate,0.105454545454545,0.105454545454545,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Constrained Oracle,AvgDelay,0.0125189421143,0.0125189421143,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Constrained Oracle,AvgTxCost,2.70343636363636,2.70343636363636,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Constrained Oracle,EmgTimely,0.892727272727273,0.892727272727273,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Link-delay-aware,TimelyRate,0.998181818181818,0.998181818181818,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Link-delay-aware,LossRate,0.00181818181818181,0.00181818181818181,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Link-delay-aware,AvgDelay,0.0122152356036037,0.0122152356036037,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Link-delay-aware,AvgTxCost,2,2,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Link-delay-aware,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,Default,Confidence-heuristic,TimelyRate,1,1,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Confidence-heuristic,LossRate,0,0,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Confidence-heuristic,AvgDelay,0.0122313066670733,0.0122313066670733,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Confidence-heuristic,AvgTxCost,2.99309090909091,2.99309090909091,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Confidence-heuristic,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,Default,Risk-constrained-v6,TimelyRate,1,1,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Risk-constrained-v6,LossRate,0,0,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Risk-constrained-v6,AvgDelay,0.0122313066670733,0.0122313066670733,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Risk-constrained-v6,AvgTxCost,2.65654545454545,2.65654545454545,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Risk-constrained-v6,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,Default,Constrained Oracle,TimelyRate,1,1,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Constrained Oracle,LossRate,0,0,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Constrained Oracle,AvgDelay,0.0140677204463584,0.0140677204463584,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Constrained Oracle,AvgTxCost,2.83254545454545,2.83254545454545,0,0,0,0
+10011,Boundary,Open,Low,Sparse,Default,Constrained Oracle,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Link-delay-aware,TimelyRate,0.738181818181818,0.929090909090909,0.190909090909091,0.0369485682295658,0.245454545454545,19.0909090909091
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Link-delay-aware,LossRate,0.261818181818182,0.0709090909090909,-0.190909090909091,0.0369485682295658,0.245454545454545,-19.0909090909091
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Link-delay-aware,AvgDelay,0.0185814025438587,0.0129200510732418,-0.00566135147061688,0.000178545345723521,0.00600628970690928,-30.467837168126
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Link-delay-aware,AvgTxCost,2,2,0,0,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Link-delay-aware,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-heuristic,TimelyRate,0.969090909090909,0.992727272727273,0.0236363636363636,0.0144755593391695,0.0454545454545454,2.36363636363636
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-heuristic,LossRate,0.0309090909090909,0.00727272727272725,-0.0236363636363636,0.0144755593391695,0.0454545454545454,-2.36363636363636
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-heuristic,AvgDelay,0.0225397522064111,0.0138193184546769,-0.00872043375173424,0.000802090552920511,0.0099975784163155,-38.6891287529498
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-heuristic,AvgTxCost,3.58494545454546,3.07690909090909,-0.508036363636365,0.0814035020068251,0.654909090909092,-14.1713833607206
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-heuristic,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Risk-constrained-v6,TimelyRate,0.967272727272727,0.989090909090909,0.0218181818181818,0.00908552567876532,0.0363636363636364,2.18181818181818
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Risk-constrained-v6,LossRate,0.0327272727272727,0.0109090909090909,-0.0218181818181818,0.00908552567876532,0.0363636363636364,-2.18181818181818
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Risk-constrained-v6,AvgDelay,0.0219315821698335,0.0137250354359139,-0.00820654673391965,0.00051008686932285,0.00895828424107038,-37.4188540998542
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Risk-constrained-v6,AvgTxCost,3.5,2.87527272727273,-0.624727272727274,0.0681027598863091,0.739090909090911,-17.8493506493507
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Risk-constrained-v6,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Constrained Oracle,TimelyRate,0.974545454545455,0.989090909090909,0.0145454545454546,0.0165239020465196,0.0272727272727273,1.45454545454546
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Constrained Oracle,LossRate,0.0254545454545454,0.0109090909090909,-0.0145454545454546,0.0165239020465196,0.0272727272727273,-1.45454545454546
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Constrained Oracle,AvgDelay,0.0220971197055143,0.0149436894032273,-0.007153430302287,0.000448262165813746,0.0075948023752291,-32.3726820401026
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Constrained Oracle,AvgTxCost,3.65145454545455,2.95254545454546,-0.698909090909092,0.102596837159053,0.80818181818182,-19.1405666484091
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Constrained Oracle,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Link-delay-aware,TimelyRate,1,1,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Link-delay-aware,LossRate,0,0,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Link-delay-aware,AvgDelay,0.0122313066670733,0.0122313066670733,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Link-delay-aware,AvgTxCost,2.55,2.55,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Link-delay-aware,EmgTimely,1,1,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-heuristic,TimelyRate,1,1,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-heuristic,LossRate,0,0,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-heuristic,AvgDelay,0.0122313066670733,0.0122313066670733,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-heuristic,AvgTxCost,3.02127272727273,3.02127272727273,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-heuristic,EmgTimely,1,1,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Risk-constrained-v6,TimelyRate,1,1,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Risk-constrained-v6,LossRate,0,0,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Risk-constrained-v6,AvgDelay,0.0122313066670733,0.0122313066670733,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Risk-constrained-v6,AvgTxCost,3.15,3.15,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Risk-constrained-v6,EmgTimely,1,1,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Constrained Oracle,TimelyRate,1,1,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Constrained Oracle,LossRate,0,0,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Constrained Oracle,AvgDelay,0.0122313066670733,0.0122313066670733,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Constrained Oracle,AvgTxCost,2.57290909090909,2.57290909090909,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Constrained Oracle,EmgTimely,1,1,0,0,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Link-delay-aware,TimelyRate,0.587272727272727,0.445454545454545,-0.141818181818182,0.0215297910074958,0.163636363636364,-14.1818181818182
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Link-delay-aware,LossRate,0.205454545454545,0.407272727272727,0.201818181818182,0.0172753682191564,0.227272727272727,20.1818181818182
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Link-delay-aware,AvgDelay,0.0530955318560295,0.0466173763738787,-0.00647815548215073,0.00165288458950178,0.00891666434968045,-12.2009428207942
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Link-delay-aware,AvgTxCost,3.82827272727273,3.43309090909091,-0.395181818181819,0,0.395181818181819,-10.3227185296004
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Link-delay-aware,EmgTimely,0.587272727272727,0.445454545454545,-0.141818181818182,0.0215297910074958,0.163636363636364,-14.1818181818182
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-heuristic,TimelyRate,0.583636363636364,0.445454545454545,-0.138181818181818,0.0153277795667305,0.163636363636364,-13.8181818181818
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-heuristic,LossRate,0.167272727272727,0.321818181818182,0.154545454545455,0.0292782603466398,0.2,15.4545454545455
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-heuristic,AvgDelay,0.0551615957097956,0.053380931379074,-0.00178066433072164,0.00191780367573697,0.0044745088993854,-3.22808705551175
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-heuristic,AvgTxCost,4.2672,4.31874545454546,0.0515454545454547,3.48176565541617e-16,0.0515454545454554,1.20794559770938
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-heuristic,EmgTimely,0.583636363636364,0.445454545454545,-0.138181818181818,0.0153277795667305,0.163636363636364,-13.8181818181818
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Risk-constrained-v6,TimelyRate,0.589090909090909,0.409090909090909,-0.18,0.0300277337371376,0.218181818181818,-18
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Risk-constrained-v6,LossRate,0.174545454545455,0.274545454545455,0.1,0.0382157425049757,0.136363636363636,10
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Risk-constrained-v6,AvgDelay,0.0548112471716691,0.0588221839818403,0.00401093681017118,0.00163304431290435,0.00711083019091992,7.31772586310416
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Risk-constrained-v6,AvgTxCost,4.21527272727273,4.42145454545455,0.206181818181819,0,0.206181818181819,4.89130434782611
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Risk-constrained-v6,EmgTimely,0.589090909090909,0.409090909090909,-0.18,0.0300277337371376,0.218181818181818,-18
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Constrained Oracle,TimelyRate,0.572727272727273,0.378181818181818,-0.194545454545455,0.0207793922070851,0.227272727272727,-19.4545454545455
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Constrained Oracle,LossRate,0.145454545454545,0.247272727272727,0.101818181818182,0.0278328897541401,0.136363636363636,10.1818181818182
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Constrained Oracle,AvgDelay,0.0564849157416913,0.0622593296815581,0.00577441393986686,0.00114673720907928,0.00769834325075957,10.2229309613802
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Constrained Oracle,AvgTxCost,4.31781818181818,4.56649090909091,0.248672727272727,0.0198584895383259,0.286363636363636,5.75922182920667
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Constrained Oracle,EmgTimely,0.572727272727273,0.378181818181818,-0.194545454545455,0.0207793922070851,0.227272727272727,-19.4545454545455
+10017,LongRange,LongMixed,Medium,Mixed,Default,Link-delay-aware,TimelyRate,0.998181818181818,0.998181818181818,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Link-delay-aware,LossRate,0.00181818181818181,0.00181818181818181,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Link-delay-aware,AvgDelay,0.0122152356036037,0.0122152356036037,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Link-delay-aware,AvgTxCost,2,2,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Link-delay-aware,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-heuristic,TimelyRate,1,1,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-heuristic,LossRate,0,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-heuristic,AvgDelay,0.0122313066670733,0.0122313066670733,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-heuristic,AvgTxCost,2.99345454545455,2.99345454545455,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-heuristic,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,Default,Risk-constrained-v6,TimelyRate,1,1,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Risk-constrained-v6,LossRate,0,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Risk-constrained-v6,AvgDelay,0.0122313066670733,0.0122313066670733,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Risk-constrained-v6,AvgTxCost,2.65654545454545,2.65654545454545,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Risk-constrained-v6,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,Default,Constrained Oracle,TimelyRate,1,1,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Constrained Oracle,LossRate,0,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Constrained Oracle,AvgDelay,0.0140893481419883,0.0140893481419883,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Constrained Oracle,AvgTxCost,2.82963636363636,2.82963636363636,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Constrained Oracle,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Link-delay-aware,TimelyRate,0.998181818181818,0.998181818181818,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Link-delay-aware,LossRate,0.00181818181818181,0.00181818181818181,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Link-delay-aware,AvgDelay,0.0122152356036037,0.0122152356036037,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Link-delay-aware,AvgTxCost,2,2,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Link-delay-aware,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,TimelyRate,1,1,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,LossRate,0,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,AvgDelay,0.0122313066670733,0.0122313066670733,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,AvgTxCost,2.95854545454546,2.95854545454546,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Risk-constrained-v6,TimelyRate,0.998181818181818,0.998181818181818,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Risk-constrained-v6,LossRate,0.00181818181818181,0.00181818181818181,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Risk-constrained-v6,AvgDelay,0.0122152356036037,0.0122152356036037,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Risk-constrained-v6,AvgTxCost,2.72381818181818,2.72381818181818,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Risk-constrained-v6,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Constrained Oracle,TimelyRate,1,1,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Constrained Oracle,LossRate,0,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Constrained Oracle,AvgDelay,0.0135185271411548,0.0135185271411548,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Constrained Oracle,AvgTxCost,2.83636363636364,2.83636363636364,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Constrained Oracle,EmgTimely,NaN,NaN,NaN,NaN,NaN,NaN

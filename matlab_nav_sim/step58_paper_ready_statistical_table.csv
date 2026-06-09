@@ -1,0 +1,81 @@
+Scene,SceneRole,GeometryType,Config,BaselineMethod,ProposedMethod,TimelyDelta_pp,TimelyHolmP,TimelyEffectRBC,EmgDelta_pp,CostDelta_pct,PracticalClass
+10014,Primary,CurvedBlind,Default,DCC-like,Risk-constrained-v6,1.19467554076538,p < 2.3e-308,0.997647058823529,0,-50.8830560898693,MeaningfulGain
+10014,Primary,CurvedBlind,ForestGeometry,DCC-like,Risk-constrained-v6,-0.0432612312812108,p = 1,-0.109756097560976,1.33333333333333,-40.9548054673859,MeaningfulGain
+10006,Reference,Mixed,Default,DCC-like,Risk-constrained-v6,7.15474209650585,p < 2.3e-308,1,-0.04605263157893,-36.2274669623462,MeaningfulGain
+10006,Reference,Mixed,ForestGeometry,DCC-like,Risk-constrained-v6,0.41930116472545,p = 6.147e-11,0.918292682926829,0.151315789473683,-30.3035884306118,WeakNonnegative
+10011,Boundary,Open,Default,DCC-like,Risk-constrained-v6,-0.485856905158066,p < 2.3e-308,-1,0,-47.8967787552111,Boundary
+10011,Boundary,Open,ForestGeometry,DCC-like,Risk-constrained-v6,19.4409317803661,p < 2.3e-308,1,9.3,8.85316593794443,MeaningfulGain
+10019,DenseBlind,ShortRangeOccluded,Default,DCC-like,Risk-constrained-v6,-0.0133111480865256,p = 0.117,-1,0,-33.5302108987355,Boundary
+10019,DenseBlind,ShortRangeOccluded,ForestGeometry,DCC-like,Risk-constrained-v6,0.572379367720455,p = 4.811e-06,0.64734693877551,0.644688644688651,-12.0649274596567,WeakNonnegative
+10017,LongRange,LongMixed,Default,DCC-like,Risk-constrained-v6,8.47587354409319,p < 2.3e-308,1,-1.2222222222222,-39.3024343193433,MeaningfulGain
+10017,LongRange,LongMixed,ForestGeometry,DCC-like,Risk-constrained-v6,1.13810316139766,p < 2.3e-308,1,0.277777777777778,-25.6351458230351,MeaningfulGain
+10013,HeldOutHighNLOS,ShortHighNLOS,Default,DCC-like,Risk-constrained-v6,-0.745424292845254,p < 2.3e-308,-1,0,-33.9188344420637,Boundary
+10013,HeldOutHighNLOS,ShortHighNLOS,ForestGeometry,DCC-like,Risk-constrained-v6,0.87188019966723,p < 2.3e-308,0.909863945578231,0.851376146788985,2.36349582956257,WeakNonnegative
+10007,HeldOutLongMixed,LongMixed,Default,DCC-like,Risk-constrained-v6,6.89850249584028,p < 2.3e-308,1,0,-41.4473489374747,MeaningfulGain
+10007,HeldOutLongMixed,LongMixed,ForestGeometry,DCC-like,Risk-constrained-v6,-0.465890183028306,p < 2.3e-308,-0.963002114164905,0,-44.1497374127357,Boundary
+10015,HeldOutBoundary,LongLowNLOS,Default,DCC-like,Risk-constrained-v6,3.29783693843594,p < 2.3e-308,1,0,-24.6373162485757,MeaningfulGain
+10015,HeldOutBoundary,LongLowNLOS,ForestGeometry,DCC-like,Risk-constrained-v6,-0.808652246256225,p < 2.3e-308,-0.995918367346939,0,-13.7324347808707,Boundary
+10014,Primary,CurvedBlind,Default,AoI-aware,Risk-constrained-v6,1.47753743760397,p < 2.3e-308,1,13.6666666666667,-9.03828113178982,MeaningfulGain
+10014,Primary,CurvedBlind,ForestGeometry,AoI-aware,Risk-constrained-v6,0.612312811980043,p < 2.3e-308,1,0.666666666666666,-3.58213001460838,WeakNonnegative
+10006,Reference,Mixed,Default,AoI-aware,Risk-constrained-v6,1.79700499168053,p < 2.3e-308,1,0.532894736842104,20.1416673098644,CostlyGain
+10006,Reference,Mixed,ForestGeometry,AoI-aware,Risk-constrained-v6,0.116472545757063,p = 0.02851,0.447619047619048,0.124999999999997,9.28509954961131,WeakNonnegative
+10011,Boundary,Open,Default,AoI-aware,Risk-constrained-v6,0.18968386023297,p = 3.617e-08,0.939516129032258,0.300000000000011,2.87075310925011,WeakNonnegative
+10011,Boundary,Open,ForestGeometry,AoI-aware,Risk-constrained-v6,-0.272878535773691,p = 0.07137,-0.375,15.8,-20.1463671955492,MeaningfulGain
+10019,DenseBlind,ShortRangeOccluded,Default,AoI-aware,Risk-constrained-v6,0.193011647254571,p < 2.3e-308,1,0.212454212454216,80.4385982211517,WeakNonnegative
+10019,DenseBlind,ShortRangeOccluded,ForestGeometry,AoI-aware,Risk-constrained-v6,-0.831946755407653,p = 2.309e-14,-0.93432007400555,-0.915750915750912,0.226706547158909,Boundary
+10017,LongRange,LongMixed,Default,AoI-aware,Risk-constrained-v6,3.04159733777039,p < 2.3e-308,1,3.88888888888889,-13.8015342568732,MeaningfulGain
+10017,LongRange,LongMixed,ForestGeometry,AoI-aware,Risk-constrained-v6,-0.479201331114798,p < 2.3e-308,-0.95578231292517,-0.611111111111111,-26.7265805110887,Boundary
+10013,HeldOutHighNLOS,ShortHighNLOS,Default,AoI-aware,Risk-constrained-v6,0.552412645590672,p < 2.3e-308,1,0.649541284403654,80.3892363234627,WeakNonnegative
+10013,HeldOutHighNLOS,ShortHighNLOS,ForestGeometry,AoI-aware,Risk-constrained-v6,-0.103161397670559,p = 0.5027,-0.157253599114064,0.0477064220183565,1.58181059090825,Boundary
+10007,HeldOutLongMixed,LongMixed,Default,AoI-aware,Risk-constrained-v6,1.78702163061564,p < 2.3e-308,1,0.0705882352941112,23.1104739562969,CostlyGain
+10007,HeldOutLongMixed,LongMixed,ForestGeometry,AoI-aware,Risk-constrained-v6,0.908485856905161,p < 2.3e-308,1,0.0705882352941112,17.1736681292265,WeakNonnegative
+10015,HeldOutBoundary,LongLowNLOS,Default,AoI-aware,Risk-constrained-v6,1.47753743760398,p < 2.3e-308,1,0.15384615384616,4.02175986799669,MeaningfulGain
+10015,HeldOutBoundary,LongLowNLOS,ForestGeometry,AoI-aware,Risk-constrained-v6,4.86522462562398,p < 2.3e-308,1,1.38461538461538,9.05418802184806,MeaningfulGain
+10014,Primary,CurvedBlind,Default,Link-delay-aware,Risk-constrained-v6,5.72379367720465,p < 2.3e-308,1,1.66666666666667,22.774634943327,CostlyGain
+10014,Primary,CurvedBlind,ForestGeometry,Link-delay-aware,Risk-constrained-v6,1.18136439267886,p < 2.3e-308,1,0,34.4994807485064,CostlyGain
+10006,Reference,Mixed,Default,Link-delay-aware,Risk-constrained-v6,5.90016638935109,p < 2.3e-308,1,0.434210526315792,29.3073292300713,CostlyGain
+10006,Reference,Mixed,ForestGeometry,Link-delay-aware,Risk-constrained-v6,0.618968386023289,p < 2.3e-308,1,0,28.0089052167517,WeakNonnegative
+10011,Boundary,Open,Default,Link-delay-aware,Risk-constrained-v6,0.232945091514158,p = 1.776e-14,1,0,9.85759922555682,WeakNonnegative
+10011,Boundary,Open,ForestGeometry,Link-delay-aware,Risk-constrained-v6,12.8885191347754,p < 2.3e-308,1,3.4,36.837836807159,CostlyGain
+10019,DenseBlind,ShortRangeOccluded,Default,Link-delay-aware,Risk-constrained-v6,0,p = 1,0,0,21.8065632696525,WeakNonnegative
+10019,DenseBlind,ShortRangeOccluded,ForestGeometry,Link-delay-aware,Risk-constrained-v6,-0.715474209650591,p < 2.3e-308,-0.957482993197279,-0.787545787545785,16.9256808974027,Boundary
+10017,LongRange,LongMixed,Default,Link-delay-aware,Risk-constrained-v6,11.0848585690516,p < 2.3e-308,1,4.94444444444444,40.1677871986264,CostlyGain
+10017,LongRange,LongMixed,ForestGeometry,Link-delay-aware,Risk-constrained-v6,0.905158069883527,p < 2.3e-308,1,0,37.8392914407877,WeakNonnegative
+10013,HeldOutHighNLOS,ShortHighNLOS,Default,Link-delay-aware,Risk-constrained-v6,0.0232945091514059,p = 0.01421,1,0.025688073394492,21.7745963043114,WeakNonnegative
+10013,HeldOutHighNLOS,ShortHighNLOS,ForestGeometry,Link-delay-aware,Risk-constrained-v6,-0.589018302828614,p < 2.3e-308,-0.960884353741497,-0.693577981651383,17.1677333736498,Boundary
+10007,HeldOutLongMixed,LongMixed,Default,Link-delay-aware,Risk-constrained-v6,3.95673876871879,p < 2.3e-308,1,0,25.3328419268046,CostlyGain
+10007,HeldOutLongMixed,LongMixed,ForestGeometry,Link-delay-aware,Risk-constrained-v6,1.3810316139767,p < 2.3e-308,1,0,22.7450718646889,CostlyGain
+10015,HeldOutBoundary,LongLowNLOS,Default,Link-delay-aware,Risk-constrained-v6,2.10316139767056,p < 2.3e-308,1,0,21.1255478835181,CostlyGain
+10015,HeldOutBoundary,LongLowNLOS,ForestGeometry,Link-delay-aware,Risk-constrained-v6,6.60232945091515,p < 2.3e-308,1,0.15384615384616,38.3133592736706,CostlyGain
+10014,Primary,CurvedBlind,Default,Confidence-heuristic,Risk-constrained-v6,0.342762063227942,p = 1.202e-07,0.748792270531401,0,-4.39938762531785,WeakNonnegative
+10014,Primary,CurvedBlind,ForestGeometry,Confidence-heuristic,Risk-constrained-v6,1.0316139767055,p < 2.3e-308,1,0.333333333333332,9.39662594257281,MeaningfulGain
+10006,Reference,Mixed,Default,Confidence-heuristic,Risk-constrained-v6,0.176372712146422,p = 0.00484,0.559663865546218,0,4.53034868052494,WeakNonnegative
+10006,Reference,Mixed,ForestGeometry,Confidence-heuristic,Risk-constrained-v6,0.522462562396009,p < 2.3e-308,1,-0.00657894736842968,10.8645532884469,WeakNonnegative
+10011,Boundary,Open,Default,Confidence-heuristic,Risk-constrained-v6,0.123128119800342,p = 2.476e-04,0.675579322638146,0,-3.62852923467816,WeakNonnegative
+10011,Boundary,Open,ForestGeometry,Confidence-heuristic,Risk-constrained-v6,4.09983361064892,p < 2.3e-308,1,0.0999999999999945,7.31158194011568,MeaningfulGain
+10019,DenseBlind,ShortRangeOccluded,Default,Confidence-heuristic,Risk-constrained-v6,0,p = 1,0,0,2.15645641756227,WeakNonnegative
+10019,DenseBlind,ShortRangeOccluded,ForestGeometry,Confidence-heuristic,Risk-constrained-v6,-0.672212978369391,p = 4.441e-14,-0.88,-0.739926739926722,-0.52680804867557,Boundary
+10017,LongRange,LongMixed,Default,Confidence-heuristic,Risk-constrained-v6,0.173044925124799,p = 0.05784,0.369337979094077,0,-3.77205077878266,WeakNonnegative
+10017,LongRange,LongMixed,ForestGeometry,Confidence-heuristic,Risk-constrained-v6,0.6189683860233,p < 2.3e-308,1,0,12.1231386110573,WeakNonnegative
+10013,HeldOutHighNLOS,ShortHighNLOS,Default,Confidence-heuristic,Risk-constrained-v6,0,p = 1,0,0,2.53657114341941,WeakNonnegative
+10013,HeldOutHighNLOS,ShortHighNLOS,ForestGeometry,Confidence-heuristic,Risk-constrained-v6,-0.459234608985026,p = 3.115e-08,-0.76,-0.535779816513771,6.2515709512415,Boundary
+10007,HeldOutLongMixed,LongMixed,Default,Confidence-heuristic,Risk-constrained-v6,0.0632279534110047,p = 0.2727,0.300813008130081,0,2.89913835569838,WeakNonnegative
+10007,HeldOutLongMixed,LongMixed,ForestGeometry,Confidence-heuristic,Risk-constrained-v6,0.11980033277873,p = 9.603e-04,0.578947368421053,0,9.01612608783216,WeakNonnegative
+10015,HeldOutBoundary,LongLowNLOS,Default,Confidence-heuristic,Risk-constrained-v6,0.0166389351081375,p = 1,0.207792207792208,0,-1.07569696694796,WeakNonnegative
+10015,HeldOutBoundary,LongLowNLOS,ForestGeometry,Confidence-heuristic,Risk-constrained-v6,2.78868552412647,p < 2.3e-308,1,0,12.9758998633225,MeaningfulGain
+10014,Primary,CurvedBlind,Default,Risk-constrained-v6,Constrained Oracle,0.425956738768718,p < 2.3e-308,0.972946859903382,-1.66666666666667,5.10491278615215,Risk
+10014,Primary,CurvedBlind,ForestGeometry,Risk-constrained-v6,Constrained Oracle,0.286189683860238,p = 2.067e-10,0.852913968547641,-0.333333333333332,5.73769835032029,Boundary
+10006,Reference,Mixed,Default,Risk-constrained-v6,Constrained Oracle,0.525790349417632,p < 2.3e-308,1,0.111842105263149,-4.0983563472744,WeakNonnegative
+10006,Reference,Mixed,ForestGeometry,Risk-constrained-v6,Constrained Oracle,0.0765391014975081,p = 0.1744,0.368983957219251,-0.0328947368420929,-5.31356539072486,WeakNonnegative
+10011,Boundary,Open,Default,Risk-constrained-v6,Constrained Oracle,0.356073211314478,p < 2.3e-308,1,0,2.92061623381135,WeakNonnegative
+10011,Boundary,Open,ForestGeometry,Risk-constrained-v6,Constrained Oracle,-1.16139767054909,p < 2.3e-308,-0.996862745098039,-0.799999999999995,8.82242619455631,Risk
+10019,DenseBlind,ShortRangeOccluded,Default,Risk-constrained-v6,Constrained Oracle,0,p = 1,0,0,-17.6271927427723,WeakNonnegative
+10019,DenseBlind,ShortRangeOccluded,ForestGeometry,Risk-constrained-v6,Constrained Oracle,-0.535773710482534,p = 1.309e-10,-0.827755102040816,-0.589743589743597,-9.72182484790452,Boundary
+10017,LongRange,LongMixed,Default,Risk-constrained-v6,Constrained Oracle,0.998336106489162,p < 2.3e-308,0.997647058823529,-0.833333333333364,12.2308300527271,Boundary
+10017,LongRange,LongMixed,ForestGeometry,Risk-constrained-v6,Constrained Oracle,0.608985024958397,p < 2.3e-308,0.994285714285714,-0.166666666666667,25.30773599149,Boundary
+10013,HeldOutHighNLOS,ShortHighNLOS,Default,Risk-constrained-v6,Constrained Oracle,0.392678868552421,p < 2.3e-308,1,-0.025688073394492,-16.5770061517427,WeakNonnegative
+10013,HeldOutHighNLOS,ShortHighNLOS,ForestGeometry,Risk-constrained-v6,Constrained Oracle,-0.399334442595678,p = 1.282e-07,-0.791919191919192,-0.755963302752294,-0.315016262649706,Boundary
+10007,HeldOutLongMixed,LongMixed,Default,Risk-constrained-v6,Constrained Oracle,0.129783693843588,p = 6.946e-07,0.783783783783784,0,-5.14665405733444,WeakNonnegative
+10007,HeldOutLongMixed,LongMixed,ForestGeometry,Risk-constrained-v6,Constrained Oracle,0.449251247920124,p < 2.3e-308,0.987588652482269,0,-1.02688421735821,WeakNonnegative
+10015,HeldOutBoundary,LongLowNLOS,Default,Risk-constrained-v6,Constrained Oracle,0.139767054908502,p = 8.038e-10,0.918003565062389,0,1.81024970431449,WeakNonnegative
+10015,HeldOutBoundary,LongLowNLOS,ForestGeometry,Risk-constrained-v6,Constrained Oracle,0.532445923460889,p < 2.3e-308,0.993524514338575,-0.15384615384616,1.67208605654275,Boundary

@@ -1,0 +1,49 @@
+function T_summary = build_step17_summary_table(T_raw)
+%BUILD_STEP17_SUMMARY_TABLE Aggregate scene + config + method statistics.
+
+scenes = unique(T_raw(:, {'Scene','SceneRole','GeometryType','DensityClass','VegetationClass'}), 'rows', 'stable');
+configs = unique(T_raw.Config, 'stable');
+methods = unique(T_raw.Method, 'stable');
+rows = [];
+
+for s = 1:height(scenes)
+    for c = 1:numel(configs)
+        for m = 1:numel(methods)
+            subT = T_raw(T_raw.Scene == scenes.Scene(s) & T_raw.Config == configs(c) & T_raw.Method == methods(m), :);
+            row = table( ...
+                scenes.Scene(s), scenes.SceneRole(s), scenes.GeometryType(s), ...
+                scenes.DensityClass(s), scenes.VegetationClass(s), ...
+                configs(c), methods(m), ...
+                mean(subT.AvgDelay_s, 'omitnan'), std(subT.AvgDelay_s, 0, 'omitnan'), ci95(subT.AvgDelay_s), ...
+                mean(subT.TimelyRate, 'omitnan'), std(subT.TimelyRate, 0, 'omitnan'), ci95(subT.TimelyRate), ...
+                mean(subT.LossRate, 'omitnan'), std(subT.LossRate, 0, 'omitnan'), ci95(subT.LossRate), ...
+                mean(subT.AvgTxCost, 'omitnan'), std(subT.AvgTxCost, 0, 'omitnan'), ci95(subT.AvgTxCost), ...
+                mean(subT.EmergencyTimelyRate, 'omitnan'), std(subT.EmergencyTimelyRate, 0, 'omitnan'), ci95(subT.EmergencyTimelyRate), ...
+                'VariableNames', { ...
+                'Scene','SceneRole','GeometryType','DensityClass','VegetationClass','Config','Method', ...
+                'AvgDelayMean','AvgDelayStd','AvgDelayCI95', ...
+                'TimelyRateMean','TimelyRateStd','TimelyRateCI95', ...
+                'LossRateMean','LossRateStd','LossRateCI95', ...
+                'AvgTxCostMean','AvgTxCostStd','AvgTxCostCI95', ...
+                'EmergencyTimelyRateMean','EmergencyTimelyRateStd','EmergencyTimelyRateCI95'});
+
+            if isempty(rows)
+                rows = row;
+            else
+                rows = [rows; row]; %#ok<AGROW>
+            end
+        end
+    end
+end
+
+T_summary = rows;
+end
+
+function value = ci95(x)
+x = x(~isnan(x));
+if isempty(x)
+    value = NaN;
+else
+    value = 1.96 * std(x, 0) / sqrt(numel(x));
+end
+end

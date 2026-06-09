@@ -1,0 +1,10 @@
+Item,Observed,Expected,Pass
+Step54 coverage rows,96,96,true
+Step54 bad coverage rows,0,0,true
+Step55 core rows,96,96,true
+Step55 significance rows,400,400,true
+Step55 interpretation rows,80,80,true
+Step56 cost-efficiency rows,64,64,true
+Step56 Pareto rows,96,96,true
+Step57 final physical mode,1,1,true
+Step57 V6 parameter rows,1,1,true

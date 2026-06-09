@@ -1,0 +1,65 @@
+Scene,Config,Method,RawSeeds,StageSeeds,RawRows,StageRows,ExpectedSeeds
+10014,ModerateForestGeometry,Link-delay-aware,50,50,50,300,50
+10014,ModerateForestGeometry,Confidence-heuristic,50,50,50,300,50
+10014,ModerateForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10014,ModerateForestGeometry,Constrained Oracle,50,50,50,300,50
+10014,ModerateForestGeometry,DCC-like,50,50,50,300,50
+10014,ModerateForestGeometry,AoI-aware,50,50,50,300,50
+10014,ModerateForestGeometry,DCC-CBR-window,50,50,50,300,50
+10014,ModerateForestGeometry,AoI-greedy,50,50,50,300,50
+10006,ModerateForestGeometry,Link-delay-aware,50,50,50,300,50
+10006,ModerateForestGeometry,Confidence-heuristic,50,50,50,300,50
+10006,ModerateForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10006,ModerateForestGeometry,Constrained Oracle,50,50,50,300,50
+10006,ModerateForestGeometry,DCC-like,50,50,50,300,50
+10006,ModerateForestGeometry,AoI-aware,50,50,50,300,50
+10006,ModerateForestGeometry,DCC-CBR-window,50,50,50,300,50
+10006,ModerateForestGeometry,AoI-greedy,50,50,50,300,50
+10011,ModerateForestGeometry,Link-delay-aware,50,50,50,300,50
+10011,ModerateForestGeometry,Confidence-heuristic,50,50,50,300,50
+10011,ModerateForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10011,ModerateForestGeometry,Constrained Oracle,50,50,50,300,50
+10011,ModerateForestGeometry,DCC-like,50,50,50,300,50
+10011,ModerateForestGeometry,AoI-aware,50,50,50,300,50
+10011,ModerateForestGeometry,DCC-CBR-window,50,50,50,300,50
+10011,ModerateForestGeometry,AoI-greedy,50,50,50,300,50
+10019,ModerateForestGeometry,Link-delay-aware,50,50,50,300,50
+10019,ModerateForestGeometry,Confidence-heuristic,50,50,50,300,50
+10019,ModerateForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10019,ModerateForestGeometry,Constrained Oracle,50,50,50,300,50
+10019,ModerateForestGeometry,DCC-like,50,50,50,300,50
+10019,ModerateForestGeometry,AoI-aware,50,50,50,300,50
+10019,ModerateForestGeometry,DCC-CBR-window,50,50,50,300,50
+10019,ModerateForestGeometry,AoI-greedy,50,50,50,300,50
+10017,ModerateForestGeometry,Link-delay-aware,50,50,50,300,50
+10017,ModerateForestGeometry,Confidence-heuristic,50,50,50,300,50
+10017,ModerateForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10017,ModerateForestGeometry,Constrained Oracle,50,50,50,300,50
+10017,ModerateForestGeometry,DCC-like,50,50,50,300,50
+10017,ModerateForestGeometry,AoI-aware,50,50,50,300,50
+10017,ModerateForestGeometry,DCC-CBR-window,50,50,50,300,50
+10017,ModerateForestGeometry,AoI-greedy,50,50,50,300,50
+10013,ModerateForestGeometry,Link-delay-aware,50,50,50,300,50
+10013,ModerateForestGeometry,Confidence-heuristic,50,50,50,300,50
+10013,ModerateForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10013,ModerateForestGeometry,Constrained Oracle,50,50,50,300,50
+10013,ModerateForestGeometry,DCC-like,50,50,50,300,50
+10013,ModerateForestGeometry,AoI-aware,50,50,50,300,50
+10013,ModerateForestGeometry,DCC-CBR-window,50,50,50,300,50
+10013,ModerateForestGeometry,AoI-greedy,50,50,50,300,50
+10007,ModerateForestGeometry,Link-delay-aware,50,50,50,300,50
+10007,ModerateForestGeometry,Confidence-heuristic,50,50,50,300,50
+10007,ModerateForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10007,ModerateForestGeometry,Constrained Oracle,50,50,50,300,50
+10007,ModerateForestGeometry,DCC-like,50,50,50,300,50
+10007,ModerateForestGeometry,AoI-aware,50,50,50,300,50
+10007,ModerateForestGeometry,DCC-CBR-window,50,50,50,300,50
+10007,ModerateForestGeometry,AoI-greedy,50,50,50,300,50
+10015,ModerateForestGeometry,Link-delay-aware,50,50,50,300,50
+10015,ModerateForestGeometry,Confidence-heuristic,50,50,50,300,50
+10015,ModerateForestGeometry,Risk-constrained-v6,50,50,50,300,50
+10015,ModerateForestGeometry,Constrained Oracle,50,50,50,300,50
+10015,ModerateForestGeometry,DCC-like,50,50,50,300,50
+10015,ModerateForestGeometry,AoI-aware,50,50,50,300,50
+10015,ModerateForestGeometry,DCC-CBR-window,50,50,50,300,50
+10015,ModerateForestGeometry,AoI-greedy,50,50,50,300,50

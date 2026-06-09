@@ -1,0 +1,10 @@
+Scene,SceneRole,GeometryType,DensityClass,VegetationClass,Config,LinkEmergencyTimelyMean,ConfidenceEmergencyTimelyMean,ConstrainedOracleEmergencyTimelyMean,ConfidenceMinusLink_pp,ConstrainedOracleMinusLink_pp,ConstrainedOracleFeasibilityBand
+10014,Primary,CurvedBlind,Medium,Dense,Strict-75ms,0.0166666666666667,0.0166666666666667,0.0166666666666667,0,0,Near-impossible
+10014,Primary,CurvedBlind,Medium,Dense,Forest-150ms,0.0166666666666667,0.0333333333333333,0.0333333333333333,1.66666666666667,1.66666666666667,Near-impossible
+10014,Primary,CurvedBlind,Medium,Dense,Moderate-Forest,0.133333333333333,0.2,0.2,6.66666666666667,6.66666666666667,Near-impossible
+10017,LongRange,LongMixed,Medium,Mixed,Strict-75ms,0.0138888888888889,0.0138888888888889,0.0111111111111111,0,-0.277777777777778,Near-impossible
+10017,LongRange,LongMixed,Medium,Mixed,Forest-150ms,0.0277777777777778,0.0333333333333333,0.0527777777777778,0.555555555555556,2.5,Near-impossible
+10017,LongRange,LongMixed,Medium,Mixed,Moderate-Forest,0.0611111111111111,0.0694444444444444,0.122222222222222,0.833333333333335,6.11111111111111,Near-impossible
+10011,Boundary,Open,Low,Sparse,Strict-75ms,0.285,0.265,0.265,-2,-2,Near-impossible
+10011,Boundary,Open,Low,Sparse,Forest-150ms,0.545,0.55,0.56,0.5,1.49999999999999,Marginal
+10011,Boundary,Open,Low,Sparse,Moderate-Forest,0.975,0.975,0.985,0,1,Feasible

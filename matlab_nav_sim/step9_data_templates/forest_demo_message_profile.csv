@@ -1,0 +1,14 @@
+t,msg_type,relay_available
+0,normal,0
+10,normal,0
+20,normal,0
+30,coop,0
+40,coop,0
+50,emergency,1
+60,emergency,1
+70,emergency,0
+80,emergency,0
+90,coop,0
+100,coop,1
+110,normal,1
+120,normal,0

@@ -1,0 +1,7 @@
+Method,EffectiveWarningRateGain,EffectiveCoverageGain,EffectiveCountDelta,EffectiveAvgDelayDelta_s
+Link-aware,NaN,0,0,NaN
+No-Regime-Gate,NaN,0,0,NaN
+No-GNSS,NaN,1,6,NaN
+No-RSU,NaN,0,0,NaN
+No-Env,NaN,0,0,NaN
+No-Traj,NaN,0,0,NaN

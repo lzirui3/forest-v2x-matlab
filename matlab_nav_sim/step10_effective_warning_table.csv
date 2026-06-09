@@ -1,0 +1,8 @@
+Method,QPosThreshold,EffectiveWarningRate,EffectiveCoverage,EffectiveCount,PosDegEmergencyCount,EffectiveAvgDelay_s
+Link-aware,0.5,NaN,0,0,6,NaN
+No-Regime-Gate,0.5,NaN,0,0,6,NaN
+Full,0.5,NaN,0,0,6,NaN
+No-GNSS,0.5,1,1,6,6,0.0103982063209102
+No-RSU,0.5,NaN,0,0,6,NaN
+No-Env,0.5,NaN,0,0,6,NaN
+No-Traj,0.5,NaN,0,0,6,NaN

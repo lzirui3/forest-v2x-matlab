@@ -1,0 +1,97 @@
+Scene,SceneRole,GeometryType,DensityClass,VegetationClass,Config,Method,AvgTxCostMean,TimelyRateMean,EmergencyTimelyRateMean,OnTimelyParetoFront,OnEmergencyParetoFront
+10014,Primary,CurvedBlind,Medium,Dense,Default,Link-delay-aware,1.62945091514143,0.934575707154742,0.983333333333333,1,1
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-heuristic,2.09261464226289,0.988386023294509,1,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,Risk-constrained-v6,2.00055241264559,0.991813643926789,1,1,1
+10014,Primary,CurvedBlind,Medium,Dense,Default,Constrained Oracle,2.10267886855241,0.996073211314476,0.983333333333333,1,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,DCC-like,4.07303926788687,0.979866888519135,1,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,AoI-aware,2.19933444259567,0.977038269550749,0.863333333333333,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Link-delay-aware,1.69833610648918,0.787587354409318,0.0233333333333333,1,1
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-heuristic,2.08804725457571,0.789084858569051,0.02,1,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Risk-constrained-v6,2.28425324459235,0.799400998336106,0.0233333333333333,1,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Constrained Oracle,2.41531680532446,0.802262895174709,0.02,1,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,DCC-like,3.86865224625625,0.799833610648919,0.01,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,AoI-aware,2.36911813643927,0.793277870216306,0.0166666666666667,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Link-delay-aware,2.2032445923461,0.930981697171381,0.990723684210526,1,1
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-heuristic,2.72548286189684,0.988219633943428,0.995065789473684,1,1
+10006,Reference,Mixed,Medium,Mixed,Default,Risk-constrained-v6,2.84895673876871,0.989983361064892,0.995065789473684,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Constrained Oracle,2.73219633943428,0.995241264559068,0.996184210526316,1,1
+10006,Reference,Mixed,Medium,Mixed,Default,DCC-like,4.46737271214643,0.918435940099833,0.995526315789473,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,AoI-aware,2.37133111480865,0.972013311148087,0.989736842105263,1,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Link-delay-aware,2.26455906821964,0.706888519134775,0.799868421052631,1,1
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,2.61475574043261,0.707853577371048,0.799934210526316,1,1
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Risk-constrained-v6,2.89883727121463,0.713078202995008,0.799868421052631,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Constrained Oracle,2.74480565723794,0.713843594009983,0.79953947368421,1,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,DCC-like,4.15923460898502,0.708885191347754,0.798355263157895,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,AoI-aware,2.65254575707155,0.711913477537438,0.798618421052631,1,0
+10011,Boundary,Open,Low,Sparse,Default,Link-delay-aware,1.71880199667221,0.992778702163061,1,1,1
+10011,Boundary,Open,Low,Sparse,Default,Confidence-heuristic,1.95932945091514,0.9938768718802,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Risk-constrained-v6,1.88823460898503,0.995108153078203,1,1,0
+10011,Boundary,Open,Low,Sparse,Default,Constrained Oracle,1.94338269550749,0.998668885191348,1,1,0
+10011,Boundary,Open,Low,Sparse,Default,DCC-like,3.62402662229617,0.999966722129784,1,1,0
+10011,Boundary,Open,Low,Sparse,Default,AoI-aware,1.83554076539101,0.993211314475873,0.997,1,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Link-delay-aware,2.35610316139767,0.672978369384359,0.451,1,1
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-heuristic,3.00437337770382,0.760865224625624,0.484,1,1
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Risk-constrained-v6,3.22404059900166,0.801863560732113,0.485,1,1
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Constrained Oracle,3.50847920133111,0.790249584026622,0.477,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,DCC-like,2.96182529118137,0.607454242928453,0.392,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,AoI-aware,4.03743760399334,0.80459234608985,0.327,1,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Link-delay-aware,2.49966722129784,0.999866888519135,1,1,1
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-heuristic,2.98048585690515,0.999866888519135,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Risk-constrained-v6,3.04475873544092,0.999866888519135,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Constrained Oracle,2.50805324459235,0.999866888519135,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,DCC-like,4.58066555740433,1,1,1,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,AoI-aware,1.68742096505824,0.997936772046589,0.997875457875458,1,1
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Link-delay-aware,2.84199667221298,0.62495840266223,0.587326007326007,1,1
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-heuristic,3.34062262895175,0.624525790349418,0.586849816849817,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Risk-constrained-v6,3.32302396006655,0.617803660565724,0.57945054945055,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Constrained Oracle,2.99996539101498,0.612445923460898,0.573553113553114,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,DCC-like,3.77895174708817,0.612079866888519,0.573003663003663,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,AoI-aware,3.3155074875208,0.6261231281198,0.588608058608059,1,1
+10017,LongRange,LongMixed,Medium,Mixed,Default,Link-delay-aware,2.04720133111481,0.868153078202995,0.931666666666667,1,1
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-heuristic,2.98199933444259,0.977271214642263,0.981111111111111,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Risk-constrained-v6,2.86951680532446,0.979001663893511,0.981111111111111,1,1
+10017,LongRange,LongMixed,Medium,Mixed,Default,Constrained Oracle,3.22048252911813,0.988985024958402,0.972777777777778,1,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,DCC-like,4.72756489184693,0.894242928452579,0.993333333333333,0,1
+10017,LongRange,LongMixed,Medium,Mixed,Default,AoI-aware,3.32896505823627,0.948585690515807,0.942222222222222,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Link-delay-aware,2.17920133111481,0.523560732113145,0.0244444444444445,1,1
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,2.6790149750416,0.526422628951747,0.0244444444444445,1,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Risk-constrained-v6,3.00379567387687,0.53261231281198,0.0244444444444445,1,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Constrained Oracle,3.76398835274542,0.538702163061564,0.0227777777777778,1,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,DCC-like,4.03926788685524,0.521231281198003,0.0216666666666667,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,AoI-aware,4.09943427620632,0.537404326123128,0.0305555555555556,0,1
+10013,HeldOutHighNLOS,ShortHighNLOS,High,Dense,Default,Link-delay-aware,2.49875207986689,0.992212978369384,0.999743119266055,1,1
+10013,HeldOutHighNLOS,ShortHighNLOS,High,Dense,Default,Confidence-heuristic,2.96757071547421,0.992445923460898,1,0,1
+10013,HeldOutHighNLOS,ShortHighNLOS,High,Dense,Default,Risk-constrained-v6,3.04284525790349,0.992445923460898,1,0,0
+10013,HeldOutHighNLOS,ShortHighNLOS,High,Dense,Default,Constrained Oracle,2.53843261231282,0.996372712146423,0.999743119266055,1,0
+10013,HeldOutHighNLOS,ShortHighNLOS,High,Dense,Default,DCC-like,4.60470881863561,0.999900166389351,1,1,0
+10013,HeldOutHighNLOS,ShortHighNLOS,High,Dense,Default,AoI-aware,1.68682196339434,0.986921797004992,0.993504587155963,1,1
+10013,HeldOutHighNLOS,ShortHighNLOS,High,Dense,ForestGeometry,Link-delay-aware,2.97149750415973,0.558702163061564,0.614605504587156,1,1
+10013,HeldOutHighNLOS,ShortHighNLOS,High,Dense,ForestGeometry,Confidence-heuristic,3.27678569051581,0.557404326123128,0.61302752293578,0,0
+10013,HeldOutHighNLOS,ShortHighNLOS,High,Dense,ForestGeometry,Risk-constrained-v6,3.48163627287853,0.552811980033278,0.607669724770642,0,0
+10013,HeldOutHighNLOS,ShortHighNLOS,High,Dense,ForestGeometry,Constrained Oracle,3.47066855241265,0.548818635607321,0.600110091743119,0,0
+10013,HeldOutHighNLOS,ShortHighNLOS,High,Dense,ForestGeometry,DCC-like,3.4012479201331,0.544093178036606,0.599155963302752,0,0
+10013,HeldOutHighNLOS,ShortHighNLOS,High,Dense,ForestGeometry,AoI-aware,3.42742096505823,0.553843594009983,0.607192660550459,0,0
+10007,HeldOutLongMixed,LongMixed,Medium,Mixed,Default,Link-delay-aware,2.25732113144759,0.956173044925125,1,1,1
+10007,HeldOutLongMixed,LongMixed,Medium,Mixed,Default,Confidence-heuristic,2.74945424292845,0.995108153078203,1,0,0
+10007,HeldOutLongMixed,LongMixed,Medium,Mixed,Default,Risk-constrained-v6,2.82916472545756,0.995740432612313,1,0,0
+10007,HeldOutLongMixed,LongMixed,Medium,Mixed,Default,Constrained Oracle,2.68355740432613,0.997038269550749,1,1,0
+10007,HeldOutLongMixed,LongMixed,Medium,Mixed,Default,DCC-like,4.83183028286191,0.92675540765391,1,0,0
+10007,HeldOutLongMixed,LongMixed,Medium,Mixed,Default,AoI-aware,2.29806988352745,0.977870216306156,0.999294117647059,1,0
+10007,HeldOutLongMixed,LongMixed,Medium,Mixed,ForestGeometry,Link-delay-aware,2.19376039933445,0.851580698835275,1,1,1
+10007,HeldOutLongMixed,LongMixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,2.4700316139767,0.864193011647254,1,1,0
+10007,HeldOutLongMixed,LongMixed,Medium,Mixed,ForestGeometry,Risk-constrained-v6,2.69273277870216,0.865391014975042,1,0,0
+10007,HeldOutLongMixed,LongMixed,Medium,Mixed,ForestGeometry,Constrained Oracle,2.66508153078203,0.869883527454243,1,1,0
+10007,HeldOutLongMixed,LongMixed,Medium,Mixed,ForestGeometry,DCC-like,4.82134309484194,0.870049916805325,1,1,0
+10007,HeldOutLongMixed,LongMixed,Medium,Mixed,ForestGeometry,AoI-aware,2.29806988352745,0.85630615640599,0.999294117647059,1,0
+10015,HeldOutBoundary,LongLowNLOS,Low,Sparse,Default,Link-delay-aware,1.10848585690516,0.975873544093178,1,1,1
+10015,HeldOutBoundary,LongLowNLOS,Low,Sparse,Default,Confidence-heuristic,1.35725956738769,0.996738768718802,1,0,0
+10015,HeldOutBoundary,LongLowNLOS,Low,Sparse,Default,Risk-constrained-v6,1.34265956738769,0.996905158069883,1,1,0
+10015,HeldOutBoundary,LongLowNLOS,Low,Sparse,Default,Constrained Oracle,1.36696505823627,0.998302828618968,1,1,0
+10015,HeldOutBoundary,LongLowNLOS,Low,Sparse,Default,DCC-like,1.78159733777038,0.963926788685524,1,0,0
+10015,HeldOutBoundary,LongLowNLOS,Low,Sparse,Default,AoI-aware,1.29074875207987,0.982129783693844,0.998461538461538,1,0
+10015,HeldOutBoundary,LongLowNLOS,Low,Sparse,ForestGeometry,Link-delay-aware,1.09043261231281,0.842196339434276,0.998461538461538,1,1
+10015,HeldOutBoundary,LongLowNLOS,Low,Sparse,ForestGeometry,Confidence-heuristic,1.33498735440932,0.880332778702163,1,1,1
+10015,HeldOutBoundary,LongLowNLOS,Low,Sparse,ForestGeometry,Risk-constrained-v6,1.50821397670549,0.908219633943428,1,1,0
+10015,HeldOutBoundary,LongLowNLOS,Low,Sparse,ForestGeometry,Constrained Oracle,1.53343261231281,0.913544093178037,0.998461538461538,1,0
+10015,HeldOutBoundary,LongLowNLOS,Low,Sparse,ForestGeometry,DCC-like,1.74829783693843,0.91630615640599,1,1,0
+10015,HeldOutBoundary,LongLowNLOS,Low,Sparse,ForestGeometry,AoI-aware,1.38299500831947,0.859567387687188,0.986153846153846,0,0

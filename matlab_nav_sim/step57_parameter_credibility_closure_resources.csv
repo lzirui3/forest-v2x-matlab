@@ -1,0 +1,6 @@
+Name,RelativePath,Role,Exists,FileSizeBytes
+USFS forest road shapefile,external_data/Forest_Roads_USFS/S_USA.RoadCore_FS.shp,Road geometry / curvature / segment-length statistics,1,556398584
+ForestPaths vegetation raster,external_data/ForestPaths/merged_pred_q050_ulx_5900_uly_1640.tif,Vegetation cover and attenuation severity proxy,1,2469816
+Below-canopy point cloud,external_data/Below_Canopy_Forestry/Below_canopy_pointcloud_2024-11-15-08-45-11.pcd,Canopy-density proxy for GNSS degradation,1,92683103
+WiLabV2Xsim PER LOS table,external_data/WiLabV2Xsim-main/PERcurves/G5-UrbanLOS/PER_LTE_MCS7_350B.txt,PER lookup physical-layer calibration,1,455
+WiLabV2Xsim PER NLOS table,external_data/WiLabV2Xsim-main/PERcurves/G5-UrbanNLOS/PER_NR_MCS7_100B.txt,PER lookup physical-layer calibration,1,468

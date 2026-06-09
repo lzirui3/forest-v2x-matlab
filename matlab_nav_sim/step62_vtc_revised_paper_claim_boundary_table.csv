@@ -1,0 +1,8 @@
+PaperClaim,ClaimStatus,Evidence,ApplicabilityClassCount,StrongerBaselineBoundaryCount
+"Main method is a frozen-parameter finite-action online scheduler.",SupportedByCodeAndStep58To60,run_step9_proposed_method -> Risk-constrained-v6; no retuning in Step59-62.,EffectiveRegime; FailureBoundary; GracefulDegradation,24
+"DCC/AoI baselines are inspired baselines, not full standards or optimal policies.",MustBeStatedAsClaimLimit,Step59/61 labels DCC-CBR-window and AoI-greedy as literature-inspired.,EffectiveRegime; FailureBoundary; GracefulDegradation,24
+"ForestGeometry is an extreme stress/boundary scenario.",SupportedByStep58NegativeBoundary,7 Step61 boundary rows.,EffectiveRegime; FailureBoundary; GracefulDegradation,24
+"ModerateForestGeometry is deployable moderate degradation evidence.",SupportedByStep60,step60_moderate_forest_geometry_50seed_* outputs.,EffectiveRegime; FailureBoundary; GracefulDegradation,24
+"Lyapunov is not the main theoretical proof.",MustBeStatedAsClaimLimit,Use risk-constrained utility/finite-action online scheduling as main method; Lyapunov only optional discussion.,EffectiveRegime; FailureBoundary; GracefulDegradation,24
+"Constrained Oracle is a bounded-action diagnostic reference, not a global oracle.",MustBeStatedAsClaimLimit,run_step9_baseline_oracle enumerates the same constrained action space.,EffectiveRegime; FailureBoundary; GracefulDegradation,24
+"Negative ForestGeometry cases are retained as applicability boundaries.",SupportedByStep61FailureBoundary,21 small-gain/boundary interpretation rows.,EffectiveRegime; FailureBoundary; GracefulDegradation,24

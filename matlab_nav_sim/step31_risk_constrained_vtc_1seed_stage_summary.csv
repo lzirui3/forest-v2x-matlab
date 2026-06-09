@@ -1,0 +1,301 @@
+Scene,SceneRole,GeometryType,DensityClass,VegetationClass,Config,Method,Stage,AvgDelayMean,AvgDelayStd,AvgDelayCI95,TimelyRateMean,TimelyRateStd,TimelyRateCI95,LossRateMean,LossRateStd,LossRateCI95,AvgTxCostMean,AvgTxCostStd,AvgTxCostCI95,EmergencyTimelyRateMean,EmergencyTimelyRateStd,EmergencyTimelyRateCI95
+10014,Primary,CurvedBlind,Medium,Dense,Default,Link-delay-aware,Normal,0.012832982369517,0,0,0.824,0,0,0.176,0,0,1.312,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Link-delay-aware,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,2,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Link-delay-aware,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Link-delay-aware,PosDeg_Emerg,0.0120253125341719,0,0,0.990909090909091,0,0,0.00909090909090904,0,0,2.03,0,0,1,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,Link-delay-aware,Recovery,0.0121644021480778,0,0,0.993377483443709,0,0,0.00662251655629142,0,0,1.07284768211921,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Link-delay-aware,Full,0.0121824781097023,0,0,0.960066555740433,0,0,0.0399334442595674,0,0,1.62945091514143,0,0,1,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-heuristic,Normal,0.012832982369517,0,0,0.824,0,0,0.176,0,0,1.312,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-heuristic,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,2,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-heuristic,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.15076923076923,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-heuristic,PosDeg_Emerg,0.0121163758473543,0,0,1,0,0,0,0,0,3.2,0,0,1,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-heuristic,Recovery,0.0123052147433614,0,0,1,0,0,0,0,0,1.13311258278146,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-heuristic,Full,0.0122361990506362,0,0,0.963394342762063,0,0,0.0366056572379367,0,0,1.87504159733777,0,0,1,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,Risk-constrained,Normal,0.0153018510035399,0,0,0.968,0,0,0.032,0,0,1.6228,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Risk-constrained,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,2,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Risk-constrained,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.17230769230769,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Risk-constrained,PosDeg_Emerg,0.0121163758473543,0,0,1,0,0,0,0,0,3.08272727272727,0,0,1,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,Risk-constrained,Recovery,0.0123052147433614,0,0,1,0,0,0,0,0,1.13543046357616,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Risk-constrained,Full,0.0127545829776992,0,0,0.993344425956739,0,0,0.00665557404326123,0,0,1.92113144758735,0,0,1,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-lyapunov,Normal,0.012832982369517,0,0,0.824,0,0,0.176,0,0,1.312,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-lyapunov,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,2,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-lyapunov,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.17230769230769,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-lyapunov,PosDeg_Emerg,0.0144414257859141,0,0,1,0,0,0,0,0,2.98545454545455,0,0,1,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-lyapunov,Recovery,0.0123052147433614,0,0,1,0,0,0,0,0,1.13543046357616,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Confidence-lyapunov,Full,0.0126779183826597,0,0,0.963394342762063,0,0,0.0366056572379367,0,0,1.83868552412645,0,0,1,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,Constrained Oracle,Normal,0.0161692832300361,0,0,0.976,0,0,0.024,0,0,1.6444,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Constrained Oracle,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,2,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Constrained Oracle,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.17230769230769,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Constrained Oracle,PosDeg_Emerg,0.0144414257859141,0,0,1,0,0,0,0,0,2.98545454545455,0,0,1,0,0
+10014,Primary,CurvedBlind,Medium,Dense,Default,Constrained Oracle,Recovery,0.0123052147433614,0,0,1,0,0,0,0,0,1.13543046357616,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,Default,Constrained Oracle,Full,0.0133634951731841,0,0,0.995008319467554,0,0,0.00499168053244592,0,0,1.90782029950083,0,0,1,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Link-delay-aware,Normal,0.0170408108366292,0,0,0.272,0,0,0.728,0,0,1.48,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Link-delay-aware,Coop_1,0.0122732570272648,0,0,0.973333333333333,0,0,0.0266666666666666,0,0,2,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Link-delay-aware,LinkDeg_Emerg,0.0120683686061023,0,0,0.984615384615385,0,0,0.0153846153846153,0,0,2,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Link-delay-aware,PosDeg_Emerg,0.0128266605725613,0,0,0.836363636363636,0,0,0.163636363636364,0,0,2.14545454545455,0,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Link-delay-aware,Recovery,0.0169493331497406,0,0,0.774834437086093,0,0,0.225165562913907,0,0,1.12384105960265,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Link-delay-aware,Full,0.0139222592415273,0,0,0.753743760399334,0,0,0.246256239600666,0,0,1.69833610648918,0,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-heuristic,Normal,0.0170408108366292,0,0,0.272,0,0,0.728,0,0,1.5304,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-heuristic,Coop_1,0.0122732570272648,0,0,0.973333333333333,0,0,0.0266666666666666,0,0,2.01866666666667,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-heuristic,LinkDeg_Emerg,0.0120683686061023,0,0,0.984615384615385,0,0,0.0153846153846153,0,0,2.32307692307692,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-heuristic,PosDeg_Emerg,0.0129467646146626,0,0,0.836363636363636,0,0,0.163636363636364,0,0,3.75281818181818,0,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-heuristic,Recovery,0.0246884881086181,0,0,0.874172185430464,0,0,0.125827814569536,0,0,1.79622516556291,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-heuristic,Full,0.016225729615605,0,0,0.778702163061564,0,0,0.221297836938436,0,0,2.21154742096506,0,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Risk-constrained,Normal,0.0312747923384828,0,0,0.36,0,0,0.64,0,0,3.71688,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Risk-constrained,Coop_1,0.0123490475462957,0,0,0.98,0,0,0.02,0,0,2.09333333333333,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Risk-constrained,LinkDeg_Emerg,0.0120683686061023,0,0,0.984615384615385,0,0,0.0153846153846153,0,0,2.32307692307692,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Risk-constrained,PosDeg_Emerg,0.0129467646146626,0,0,0.836363636363636,0,0,0.163636363636364,0,0,3.53263636363636,0,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Risk-constrained,Recovery,0.0185207359135991,0,0,0.900662251655629,0,0,0.0993377483443708,0,0,1.91006622516556,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Risk-constrained,Full,0.0159193670746408,0,0,0.805324459234609,0,0,0.194675540765391,0,0,2.67324459234609,0,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-lyapunov,Normal,0.0131326799663795,0,0,0.256,0,0,0.744,0,0,1.312,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-lyapunov,Coop_1,0.0122732570272648,0,0,0.973333333333333,0,0,0.0266666666666666,0,0,2.00933333333333,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-lyapunov,LinkDeg_Emerg,0.0134004978974442,0,0,0.984615384615385,0,0,0.0153846153846153,0,0,2.30461538461538,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-lyapunov,PosDeg_Emerg,0.0143117424928827,0,0,0.836363636363636,0,0,0.163636363636364,0,0,3.125,0,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-lyapunov,Recovery,0.0175587172098946,0,0,0.781456953642384,0,0,0.218543046357616,0,0,1.24337748344371,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Confidence-lyapunov,Full,0.0142884559523319,0,0,0.752079866888519,0,0,0.247920133111481,0,0,1.90798668885191,0,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Constrained Oracle,Normal,0.0260259212475451,0,0,0.336,0,0,0.664,0,0,3.13128,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Constrained Oracle,Coop_1,0.0124695958948431,0,0,0.986666666666667,0,0,0.0133333333333333,0,0,2.30333333333333,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Constrained Oracle,LinkDeg_Emerg,0.0134004978974442,0,0,0.984615384615385,0,0,0.0153846153846153,0,0,2.30461538461538,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Constrained Oracle,PosDeg_Emerg,0.014431846534984,0,0,0.836363636363636,0,0,0.163636363636364,0,0,3.51736363636364,0,0,0,0,0
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Constrained Oracle,Recovery,0.0203306346405638,0,0,0.907284768211921,0,0,0.0927152317880795,0,0,2.02291390728477,0,0,NaN,NaN,NaN
+10014,Primary,CurvedBlind,Medium,Dense,ForestGeometry,Constrained Oracle,Full,0.0163752537831177,0,0,0.803660565723794,0,0,0.196339434276206,0,0,2.62742096505824,0,0,0,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Link-delay-aware,Normal,0.0182951930752122,0,0,0.736,0,0,0.264,0,0,1.5236,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Link-delay-aware,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,1.962,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Link-delay-aware,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.15230769230769,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Link-delay-aware,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Link-delay-aware,Recovery,0.0121664229795205,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Link-delay-aware,Full,0.0130450924168838,0,0,0.945091514143095,0,0,0.0549084858569051,0,0,2.14675540765392,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-heuristic,Normal,0.0252540921376237,0,0,0.872,0,0,0.128,0,0,2.1476,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-heuristic,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,1.986,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-heuristic,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.43692307692308,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-heuristic,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2.69181818181818,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-heuristic,Recovery,0.0121664229795205,0,0,1,0,0,0,0,0,3.05860927152318,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-heuristic,Full,0.0144942748254213,0,0,0.973377703826955,0,0,0.0266222961730449,0,0,2.46705490848585,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Risk-constrained,Normal,0.0221376618068527,0,0,0.928,0,0,0.072,0,0,2.0988,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Risk-constrained,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,1.962,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Risk-constrained,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.38153846153846,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Risk-constrained,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2.76272727272727,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Risk-constrained,Recovery,0.0121664229795205,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Risk-constrained,Full,0.0140108505058537,0,0,0.985024958402662,0,0,0.0149750415973378,0,0,2.33011647254576,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-lyapunov,Normal,0.0182951930752122,0,0,0.736,0,0,0.264,0,0,1.5236,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-lyapunov,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,1.962,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-lyapunov,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.27076923076923,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-lyapunov,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-lyapunov,Recovery,0.0121664229795205,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Confidence-lyapunov,Full,0.0130450924168838,0,0,0.945091514143095,0,0,0.0549084858569051,0,0,2.15956738768719,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Constrained Oracle,Normal,0.0274030045037675,0,0,0.92,0,0,0.08,0,0,2.31752,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Constrained Oracle,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,1.962,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Constrained Oracle,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.27076923076923,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Constrained Oracle,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Constrained Oracle,Recovery,0.0121664229795205,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,Default,Constrained Oracle,Full,0.0150216586257255,0,0,0.983361064891847,0,0,0.0166389351081531,0,0,2.3246921797005,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Link-delay-aware,Normal,0.0365116653467914,0,0,0.112,0,0,0.888,0,0,1.7828,0,0,0.105263157894737,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Link-delay-aware,Coop_1,0.0132792093768764,0,0,0.953333333333333,0,0,0.0466666666666666,0,0,1.962,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Link-delay-aware,LinkDeg_Emerg,0.0132484217447229,0,0,0.461538461538462,0,0,0.538461538461538,0,0,2.51230769230769,0,0,0.0555555555555556,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Link-delay-aware,PosDeg_Emerg,0.0127274205852036,0,0,0.890909090909091,0,0,0.1,0,0,2.61545454545454,0,0,0.890909090909091,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Link-delay-aware,Recovery,0.0134976852487118,0,0,0.927152317880795,0,0,0.0662251655629139,0,0,2.60165562913907,0,0,0.927152317880795,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Link-delay-aware,Full,0.0139829769697743,0,0,0.707154742096506,0,0,0.289517470881864,0,0,2.26455906821964,0,0,0.8125,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,Normal,0.0393741912602389,0,0,0.112,0,0,0.888,0,0,1.8308,0,0,0.105263157894737,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,Coop_1,0.0141414347772662,0,0,0.973333333333333,0,0,0.0266666666666666,0,0,2.27866666666667,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,LinkDeg_Emerg,0.0135632126103455,0,0,0.461538461538462,0,0,0.538461538461538,0,0,4.14892307692308,0,0,0.0555555555555556,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,PosDeg_Emerg,0.0133753616447754,0,0,0.9,0,0,0.0909090909090909,0,0,3.04527272727273,0,0,0.9,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,Recovery,0.0134976852487118,0,0,0.927152317880795,0,0,0.0662251655629139,0,0,2.99900662251656,0,0,0.927152317880795,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,Full,0.0145324694152679,0,0,0.713810316139767,0,0,0.282861896838602,0,0,2.70908485856905,0,0,0.815789473684211,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Risk-constrained,Normal,0.0565970532763906,0,0,0.176,0,0,0.824,0,0,3.96336,0,0,0.0526315789473684,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Risk-constrained,Coop_1,0.0136915928736826,0,0,0.98,0,0,0.02,0,0,2.26766666666667,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Risk-constrained,LinkDeg_Emerg,0.0132484217447229,0,0,0.461538461538462,0,0,0.538461538461538,0,0,3.74184615384615,0,0,0.0555555555555556,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Risk-constrained,PosDeg_Emerg,0.0125021123213889,0,0,0.9,0,0,0.1,0,0,2.90972727272727,0,0,0.9,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Risk-constrained,Recovery,0.0130258084483292,0,0,0.927152317880795,0,0,0.0728476821192053,0,0,2.55794701986755,0,0,0.927152317880795,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Risk-constrained,Full,0.015334644473601,0,0,0.728785357737105,0,0,0.271214642262895,0,0,2.97023294509152,0,0,0.8125,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-lyapunov,Normal,0.0297074303390827,0,0,0.096,0,0,0.904,0,0,1.5656,0,0,0.0526315789473684,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-lyapunov,Coop_1,0.0132792093768764,0,0,0.953333333333333,0,0,0.0466666666666666,0,0,1.97833333333333,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-lyapunov,LinkDeg_Emerg,0.0135632126103455,0,0,0.461538461538462,0,0,0.538461538461538,0,0,2.976,0,0,0.0555555555555556,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-lyapunov,PosDeg_Emerg,0.0125021123213889,0,0,0.9,0,0,0.1,0,0,2.81072727272727,0,0,0.9,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-lyapunov,Recovery,0.0130258084483292,0,0,0.927152317880795,0,0,0.0728476821192053,0,0,2.55,0,0,0.927152317880795,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Confidence-lyapunov,Full,0.0134991386458874,0,0,0.705490848585691,0,0,0.294509151414309,0,0,2.29637271214643,0,0,0.8125,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Constrained Oracle,Normal,0.0520454584537439,0,0,0.16,0,0,0.84,0,0,3.40376,0,0,0.0526315789473684,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Constrained Oracle,Coop_1,0.0136915928736826,0,0,0.98,0,0,0.02,0,0,2.37266666666667,0,0,1,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Constrained Oracle,LinkDeg_Emerg,0.0135632126103455,0,0,0.461538461538462,0,0,0.538461538461538,0,0,3.88307692307692,0,0,0.0555555555555556,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Constrained Oracle,PosDeg_Emerg,0.0125021123213889,0,0,0.9,0,0,0.1,0,0,2.81072727272727,0,0,0.9,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Constrained Oracle,Recovery,0.0130258084483292,0,0,0.927152317880795,0,0,0.0728476821192053,0,0,2.55,0,0,0.927152317880795,0,0
+10006,Reference,Mixed,Medium,Mixed,ForestGeometry,Constrained Oracle,Full,0.0149582385376151,0,0,0.725457570715474,0,0,0.274542429284526,0,0,2.87520798668885,0,0,0.8125,0,0
+10011,Boundary,Open,Low,Sparse,Default,Link-delay-aware,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,1.4572,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Link-delay-aware,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,1.34866666666667,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Link-delay-aware,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,1.93846153846154,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,Default,Link-delay-aware,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,Default,Link-delay-aware,Recovery,0.0121807597044737,0,0,0.986754966887417,0,0,0.0132450331125827,0,0,2.00364238410596,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Link-delay-aware,Full,0.0120682516610794,0,0,0.996672212978369,0,0,0.00332778702163061,0,0,1.71880199667221,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Confidence-heuristic,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,1.5196,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Confidence-heuristic,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,1.37266666666667,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Confidence-heuristic,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.08923076923077,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,Default,Confidence-heuristic,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,3.08,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,Default,Confidence-heuristic,Recovery,0.0121807597044737,0,0,0.986754966887417,0,0,0.0132450331125827,0,0,2.05397350993377,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Confidence-heuristic,Full,0.0120682516610794,0,0,0.996672212978369,0,0,0.00332778702163061,0,0,1.96439267886855,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Risk-constrained,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,1.4572,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Risk-constrained,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,1.34866666666667,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Risk-constrained,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.11076923076923,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,Default,Risk-constrained,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2.98818181818182,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,Default,Risk-constrained,Recovery,0.0121807597044737,0,0,0.986754966887417,0,0,0.0132450331125827,0,0,2.05927152317881,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Risk-constrained,Full,0.0120682516610794,0,0,0.996672212978369,0,0,0.00332778702163061,0,0,1.93227953410982,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Confidence-lyapunov,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,1.4572,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Confidence-lyapunov,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,1.34866666666667,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Confidence-lyapunov,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.11076923076923,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,Default,Confidence-lyapunov,PosDeg_Emerg,0.0143000641491174,0,0,1,0,0,0,0,0,2.94272727272727,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,Default,Confidence-lyapunov,Recovery,0.0121807597044737,0,0,0.986754966887417,0,0,0.0132450331125827,0,0,2.05927152317881,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Confidence-lyapunov,Full,0.0124952224344376,0,0,0.996672212978369,0,0,0.00332778702163061,0,0,1.92396006655574,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Constrained Oracle,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,1.4572,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Constrained Oracle,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,1.34866666666667,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Constrained Oracle,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.11076923076923,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,Default,Constrained Oracle,PosDeg_Emerg,0.0143000641491174,0,0,1,0,0,0,0,0,2.94272727272727,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,Default,Constrained Oracle,Recovery,0.0121807597044737,0,0,0.986754966887417,0,0,0.0132450331125827,0,0,2.05927152317881,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,Default,Constrained Oracle,Full,0.0124952224344376,0,0,0.996672212978369,0,0,0.00332778702163061,0,0,1.92396006655574,0,0,1,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Link-delay-aware,Normal,0.0733837297449661,0,0,0.104,0,0,0.864,0,0,2.69144,0,0,0,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Link-delay-aware,Coop_1,0.0717583169071304,0,0,0.613333333333333,0,0,0.373333333333333,0,0,3.91453333333333,0,0,0.666666666666667,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Link-delay-aware,LinkDeg_Emerg,0.0398761239593499,0,0,0.692307692307692,0,0,0.307692307692308,0,0,2.65076923076923,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Link-delay-aware,PosDeg_Emerg,0.0185006609082705,0,0,0.781818181818182,0,0,0.218181818181818,0,0,2,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Link-delay-aware,Recovery,0.0135335003902403,0,0,0.781456953642384,0,0,0.218543046357616,0,0,2.14668874172185,0,0,0,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Link-delay-aware,Full,0.0360423351590696,0,0,0.589018302828619,0,0,0.400998336106489,0,0,2.72888519134775,0,0,0.2,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-heuristic,Normal,0.0733837297449661,0,0,0.104,0,0,0.864,0,0,2.69144,0,0,0,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-heuristic,Coop_1,0.0745623300493388,0,0,0.7,0,0,0.293333333333333,0,0,4.3148,0,0,0.666666666666667,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-heuristic,LinkDeg_Emerg,0.044286912846666,0,0,0.907692307692308,0,0,0.0923076923076923,0,0,4.61353846153846,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-heuristic,PosDeg_Emerg,0.0218900334067079,0,0,0.981818181818182,0,0,0.0181818181818182,0,0,3.70545454545455,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-heuristic,Recovery,0.0139406906003379,0,0,0.801324503311258,0,0,0.198675496688742,0,0,2.41556291390729,0,0,0,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-heuristic,Full,0.0384793319207129,0,0,0.675540765391015,0,0,0.316139767054909,0,0,3.42076539101497,0,0,0.2,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Risk-constrained,Normal,0.0799188308789822,0,0,0.288,0,0,0.68,0,0,4.31832,0,0,0,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Risk-constrained,Coop_1,0.0725028714680989,0,0,0.746666666666667,0,0,0.24,0,0,4.3904,0,0,0.666666666666667,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Risk-constrained,LinkDeg_Emerg,0.0471747513721596,0,0,0.969230769230769,0,0,0.0307692307692308,0,0,5.27261538461538,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Risk-constrained,PosDeg_Emerg,0.0210722217631407,0,0,0.990909090909091,0,0,0.00909090909090904,0,0,3.89909090909091,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Risk-constrained,Recovery,0.0153658395088654,0,0,0.814569536423841,0,0,0.185430463576159,0,0,3.21953642384106,0,0,0,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Risk-constrained,Full,0.041472072050649,0,0,0.737104825291181,0,0,0.252911813643927,0,0,4.0867221297837,0,0,0.2,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-lyapunov,Normal,0.0676719302511537,0,0,0.048,0,0,0.928,0,0,1.4572,0,0,0,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-lyapunov,Coop_1,0.0721271803197178,0,0,0.613333333333333,0,0,0.38,0,0,3.6672,0,0,0.666666666666667,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-lyapunov,LinkDeg_Emerg,0.0411981546415565,0,0,0.769230769230769,0,0,0.230769230769231,0,0,3.14923076923077,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-lyapunov,PosDeg_Emerg,0.0195562500734638,0,0,0.854545454545454,0,0,0.145454545454546,0,0,3.04454545454546,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-lyapunov,Recovery,0.0137862377260064,0,0,0.781456953642384,0,0,0.218543046357616,0,0,2.15794701986755,0,0,0,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Confidence-lyapunov,Full,0.0352797978918855,0,0,0.599001663893511,0,0,0.394342762063228,0,0,2.6583693843594,0,0,0.2,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Constrained Oracle,Normal,0.0803595589460631,0,0,0.208,0,0,0.76,0,0,3.89976,0,0,0,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Constrained Oracle,Coop_1,0.0747135015277728,0,0,0.7,0,0,0.286666666666667,0,0,4.3904,0,0,0.666666666666667,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Constrained Oracle,LinkDeg_Emerg,0.0485673114385038,0,0,0.969230769230769,0,0,0.0307692307692308,0,0,5.77661538461538,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Constrained Oracle,PosDeg_Emerg,0.0211708940655415,0,0,0.990909090909091,0,0,0.00909090909090904,0,0,3.77363636363637,0,0,NaN,NaN,NaN
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Constrained Oracle,Recovery,0.0159624989474064,0,0,0.814569536423841,0,0,0.185430463576159,0,0,3.21622516556291,0,0,0,0,0
+10011,Boundary,Open,Low,Sparse,ForestGeometry,Constrained Oracle,Full,0.0410552936948017,0,0,0.708818635607321,0,0,0.281198003327787,0,0,4.03038269550749,0,0,0.2,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Link-delay-aware,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,2.308,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Link-delay-aware,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Link-delay-aware,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Link-delay-aware,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Link-delay-aware,Recovery,0.0121664229795205,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Link-delay-aware,Full,0.01206502399156,0,0,1,0,0,0,0,0,2.49966722129784,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-heuristic,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,2.644,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-heuristic,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,3.15,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-heuristic,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.95615384615385,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-heuristic,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,3.00818181818182,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-heuristic,Recovery,0.0121664229795205,0,0,1,0,0,0,0,0,3.09039735099338,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-heuristic,Full,0.01206502399156,0,0,1,0,0,0,0,0,2.9828618968386,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Risk-constrained,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,2.308,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Risk-constrained,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Risk-constrained,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Risk-constrained,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2.90454545454545,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Risk-constrained,Recovery,0.0121664229795205,0,0,1,0,0,0,0,0,2.60562913907285,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Risk-constrained,Full,0.01206502399156,0,0,1,0,0,0,0,0,2.57853577371049,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-lyapunov,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,2.308,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-lyapunov,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-lyapunov,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-lyapunov,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2.61545454545454,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-lyapunov,Recovery,0.0121664229795205,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Confidence-lyapunov,Full,0.01206502399156,0,0,1,0,0,0,0,0,2.51164725457571,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Constrained Oracle,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,2.308,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Constrained Oracle,Coop_1,0.0119745037745441,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Constrained Oracle,LinkDeg_Emerg,0.0119368881633837,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Constrained Oracle,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2.61545454545454,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Constrained Oracle,Recovery,0.0121664229795205,0,0,1,0,0,0,0,0,2.55,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,Default,Constrained Oracle,Full,0.01206502399156,0,0,1,0,0,0,0,0,2.51164725457571,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Link-delay-aware,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,2.308,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Link-delay-aware,Coop_1,0.0120012729282003,0,0,0.906666666666667,0,0,0.0933333333333334,0,0,2.606,0,0,0.906666666666667,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Link-delay-aware,LinkDeg_Emerg,0.0132953414192859,0,0,0.753846153846154,0,0,0.230769230769231,0,0,2.69769230769231,0,0,0.753846153846154,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Link-delay-aware,PosDeg_Emerg,0.0520006716621503,0,0,0.554545454545455,0,0,0.254545454545455,0,0,3.82827272727273,0,0,0.554545454545455,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Link-delay-aware,Recovery,0.0743953233388702,0,0,0.145695364238411,0,0,0.768211920529801,0,0,3.32523178807947,0,0,0.145695364238411,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Link-delay-aware,Full,0.0249753651201247,0,0,0.653910149750416,0,0,0.287853577371048,0,0,2.95835274542429,0,0,0.619047619047619,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-heuristic,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,2.644,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-heuristic,Coop_1,0.0120012729282003,0,0,0.906666666666667,0,0,0.0933333333333334,0,0,3.1872,0,0,0.906666666666667,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-heuristic,LinkDeg_Emerg,0.0132953414192859,0,0,0.753846153846154,0,0,0.230769230769231,0,0,2.89153846153846,0,0,0.753846153846154,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-heuristic,PosDeg_Emerg,0.0533878107308366,0,0,0.581818181818182,0,0,0.2,0,0,4.15445454545455,0,0,0.581818181818182,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-heuristic,Recovery,0.0744429633661812,0,0,0.158940397350993,0,0,0.741721854304636,0,0,3.73986754966888,0,0,0.158940397350993,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-heuristic,Full,0.0260798351457792,0,0,0.662229617304492,0,0,0.271214642262895,0,0,3.35813643926789,0,0,0.628205128205128,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Risk-constrained,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,2.308,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Risk-constrained,Coop_1,0.0120012729282003,0,0,0.906666666666667,0,0,0.0933333333333334,0,0,2.55,0,0,0.906666666666667,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Risk-constrained,LinkDeg_Emerg,0.0118932699047738,0,0,0.753846153846154,0,0,0.246153846153846,0,0,2.58692307692308,0,0,0.753846153846154,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Risk-constrained,PosDeg_Emerg,0.0537171233503135,0,0,0.581818181818182,0,0,0.209090909090909,0,0,4.086,0,0,0.581818181818182,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Risk-constrained,Recovery,0.0757732223614205,0,0,0.158940397350993,0,0,0.741721854304636,0,0,3.1605298013245,0,0,0.158940397350993,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Risk-constrained,Full,0.026073654670181,0,0,0.662229617304492,0,0,0.274542429284526,0,0,2.93818635607322,0,0,0.628205128205128,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-lyapunov,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,2.308,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-lyapunov,Coop_1,0.0120012729282003,0,0,0.906666666666667,0,0,0.0933333333333334,0,0,2.5704,0,0,0.906666666666667,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-lyapunov,LinkDeg_Emerg,0.0118932699047738,0,0,0.753846153846154,0,0,0.246153846153846,0,0,2.55,0,0,0.753846153846154,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-lyapunov,PosDeg_Emerg,0.0517148542041749,0,0,0.581818181818182,0,0,0.236363636363636,0,0,3.84354545454546,0,0,0.581818181818182,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-lyapunov,Recovery,0.0741781478807405,0,0,0.145695364238411,0,0,0.76158940397351,0,0,3.11841059602649,0,0,0.145695364238411,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Confidence-lyapunov,Full,0.0250093700220548,0,0,0.658901830282862,0,0,0.284525790349418,0,0,2.88432612312812,0,0,0.624542124542125,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Constrained Oracle,Normal,0.0121969975124565,0,0,1,0,0,0,0,0,2.308,0,0,1,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Constrained Oracle,Coop_1,0.0120012729282003,0,0,0.906666666666667,0,0,0.0933333333333334,0,0,2.5704,0,0,0.906666666666667,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Constrained Oracle,LinkDeg_Emerg,0.0118932699047738,0,0,0.753846153846154,0,0,0.246153846153846,0,0,2.55,0,0,0.753846153846154,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Constrained Oracle,PosDeg_Emerg,0.0553932514970916,0,0,0.590909090909091,0,0,0.163636363636364,0,0,4.24145454545455,0,0,0.590909090909091,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Constrained Oracle,Recovery,0.0765448417223691,0,0,0.158940397350993,0,0,0.728476821192053,0,0,3.37430463576159,0,0,0.158940397350993,0,0
+10019,DenseBlind,ShortRangeOccluded,High,Dense,ForestGeometry,Constrained Oracle,Full,0.0270295387832411,0,0,0.663893510815308,0,0,0.262895174708819,0,0,3.02144758735442,0,0,0.63003663003663,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Link-delay-aware,Normal,0.0191786183290916,0,0,0.696,0,0,0.304,0,0,1.5944,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Link-delay-aware,Coop_1,0.0128360505141846,0,0,0.913333333333333,0,0,0.0866666666666667,0,0,2.008,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Link-delay-aware,LinkDeg_Emerg,0.011950522796931,0,0,1,0,0,0,0,0,2.05076923076923,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Link-delay-aware,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,Default,Link-delay-aware,Recovery,0.0122105045574342,0,0,0.993377483443709,0,0,0.00662251655629142,0,0,2,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,Default,Link-delay-aware,Full,0.0133928778572882,0,0,0.913477537437604,0,0,0.086522462562396,0,0,1.92312811980033,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-heuristic,Normal,0.0266430270991773,0,0,0.92,0,0,0.08,0,0,2.5024,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-heuristic,Coop_1,0.0128360505141846,0,0,0.913333333333333,0,0,0.0866666666666667,0,0,2.12266666666667,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-heuristic,LinkDeg_Emerg,0.011950522796931,0,0,1,0,0,0,0,0,2.25692307692308,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-heuristic,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,3.08090909090909,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-heuristic,Recovery,0.0122105045574342,0,0,0.993377483443709,0,0,0.00662251655629142,0,0,2.04635761589404,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-heuristic,Full,0.0151613488135627,0,0,0.960066555740433,0,0,0.0399334442595674,0,0,2.37237936772046,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Risk-constrained,Normal,0.0243246495444915,0,0,0.912,0,0,0.088,0,0,2.604,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Risk-constrained,Coop_1,0.0133406100251095,0,0,0.953333333333333,0,0,0.0466666666666666,0,0,2.18533333333333,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Risk-constrained,LinkDeg_Emerg,0.011950522796931,0,0,1,0,0,0,0,0,2.21230769230769,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Risk-constrained,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2.98181818181818,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,Default,Risk-constrained,Recovery,0.0122105045574342,0,0,0.993377483443709,0,0,0.00662251655629142,0,0,2.05099337748344,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,Default,Risk-constrained,Full,0.0147875060313396,0,0,0.968386023294509,0,0,0.0316139767054908,0,0,2.3873544093178,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-lyapunov,Normal,0.0191786183290916,0,0,0.696,0,0,0.304,0,0,1.5944,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-lyapunov,Coop_1,0.0128360505141846,0,0,0.913333333333333,0,0,0.0866666666666667,0,0,2.01733333333333,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-lyapunov,LinkDeg_Emerg,0.011950522796931,0,0,1,0,0,0,0,0,2.21230769230769,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-lyapunov,PosDeg_Emerg,0.0144009078923571,0,0,1,0,0,0,0,0,2.93454545454546,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-lyapunov,Recovery,0.0122105045574342,0,0,0.993377483443709,0,0,0.00662251655629142,0,0,2.05099337748344,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,Default,Confidence-lyapunov,Full,0.0138789403436233,0,0,0.913477537437604,0,0,0.086522462562396,0,0,2.12678868552412,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Constrained Oracle,Normal,0.0283346808973081,0,0,0.944,0,0,0.056,0,0,2.83904,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Constrained Oracle,Coop_1,0.0135537575963976,0,0,0.966666666666667,0,0,0.0333333333333333,0,0,2.288,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Constrained Oracle,LinkDeg_Emerg,0.011950522796931,0,0,1,0,0,0,0,0,2.21230769230769,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,Default,Constrained Oracle,PosDeg_Emerg,0.0144009078923571,0,0,1,0,0,0,0,0,2.93454545454546,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,Default,Constrained Oracle,Recovery,0.0122105045574342,0,0,0.993377483443709,0,0,0.00662251655629142,0,0,2.05099337748344,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,Default,Constrained Oracle,Full,0.0161585828757397,0,0,0.978369384359401,0,0,0.021630615640599,0,0,2.45321131447587,0,0,1,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Link-delay-aware,Normal,0.069234818125409,0,0,0.04,0,0,0.96,0,0,1.9872,0,0,0.166666666666667,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Link-delay-aware,Coop_1,0.0142317825459452,0,0,0.226666666666667,0,0,0.766666666666667,0,0,2.468,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Link-delay-aware,LinkDeg_Emerg,0.0119619036495125,0,0,0.646153846153846,0,0,0.353846153846154,0,0,2.27846153846154,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Link-delay-aware,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Link-delay-aware,Recovery,0.0136077824756403,0,0,0.80794701986755,0,0,0.19205298013245,0,0,2.13907284768212,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Link-delay-aware,Full,0.0137709791662551,0,0,0.520798668885191,0,0,0.477537437603993,0,0,2.17920133111481,0,0,0.0277777777777778,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,Normal,0.069234818125409,0,0,0.04,0,0,0.96,0,0,1.9872,0,0,0.166666666666667,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,Coop_1,0.0142317825459452,0,0,0.226666666666667,0,0,0.766666666666667,0,0,3.00673333333333,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,LinkDeg_Emerg,0.0119619036495125,0,0,0.646153846153846,0,0,0.353846153846154,0,0,3.084,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,3.08454545454546,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,Recovery,0.0136077824756403,0,0,0.80794701986755,0,0,0.19205298013245,0,0,2.29668874172185,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-heuristic,Full,0.0137709791662551,0,0,0.520798668885191,0,0,0.477537437603993,0,0,2.63888519134775,0,0,0.0277777777777778,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Risk-constrained,Normal,0.0818137210678658,0,0,0.128,0,0,0.872,0,0,5.06832,0,0,0.166666666666667,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Risk-constrained,Coop_1,0.0239485383356499,0,0,0.26,0,0,0.74,0,0,4.6512,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Risk-constrained,LinkDeg_Emerg,0.0119619036495125,0,0,0.646153846153846,0,0,0.353846153846154,0,0,3.51415384615385,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Risk-constrained,PosDeg_Emerg,0.0119750142105576,0,0,1,0,0,0,0,0,2.98181818181818,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Risk-constrained,Recovery,0.0156573290449789,0,0,0.827814569536424,0,0,0.172185430463576,0,0,3.1,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Risk-constrained,Full,0.0181320186121669,0,0,0.552412645590682,0,0,0.447587354409318,0,0,3.91970049916805,0,0,0.0277777777777778,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-lyapunov,Normal,0.0623440937019324,0,0,0.024,0,0,0.976,0,0,1.5944,0,0,0.166666666666667,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-lyapunov,Coop_1,0.0121791228534529,0,0,0.226666666666667,0,0,0.773333333333333,0,0,2.19066666666667,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-lyapunov,LinkDeg_Emerg,0.0139918149506049,0,0,0.646153846153846,0,0,0.353846153846154,0,0,2.54923076923077,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-lyapunov,PosDeg_Emerg,0.0132170827257355,0,0,1,0,0,0,0,0,2.91090909090909,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-lyapunov,Recovery,0.0136422854551503,0,0,0.801324503311258,0,0,0.198675496688742,0,0,2.15430463576159,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Confidence-lyapunov,Full,0.0138495945998474,0,0,0.515806988352745,0,0,0.484193011647255,0,0,2.22811980033278,0,0,0.0277777777777778,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Constrained Oracle,Normal,0.0789138238628669,0,0,0.112,0,0,0.888,0,0,4.54992,0,0,0.166666666666667,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Constrained Oracle,Coop_1,0.0239485383356499,0,0,0.26,0,0,0.74,0,0,4.57386666666667,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Constrained Oracle,LinkDeg_Emerg,0.0139918149506049,0,0,0.646153846153846,0,0,0.353846153846154,0,0,3.50646153846154,0,0,0,0,0
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Constrained Oracle,PosDeg_Emerg,0.0132170827257355,0,0,1,0,0,0,0,0,2.91090909090909,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Constrained Oracle,Recovery,0.0162444419325032,0,0,0.827814569536424,0,0,0.172185430463576,0,0,3.12913907284768,0,0,NaN,NaN,NaN
+10017,LongRange,LongMixed,Medium,Mixed,ForestGeometry,Constrained Oracle,Full,0.0185178093893627,0,0,0.549084858569052,0,0,0.450915141430948,0,0,3.78608985024958,0,0,0.0277777777777778,0,0

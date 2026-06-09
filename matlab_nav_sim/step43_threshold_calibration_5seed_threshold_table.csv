@@ -1,0 +1,6 @@
+Parameter,DefaultValue,RecommendedValue,EvidenceRule,PositiveCount,SampleCount,CalibrationScore,Note
+utility_required_timely_qpos_high_threshold,0.75,0.839834451529539,ROC/Youden threshold for reliable-position label using q_pos >= threshold.,5220,30050,0.759662486517515,"Reliable label: low position sigma, low DOP, high satellite count."
+utility_required_timely_qpos_low_threshold,0.5,0.640725199925982,ROC/Youden threshold for degraded-position label using q_pos <= threshold.,9149,30050,0.803076612300422,"Degraded label: high position sigma, high DOP, or low satellite count."
+blind_zone_trigger_threshold,0.55,0.2,ROC/Youden threshold for high-blockage label using blind_zone >= threshold.,27390,30050,0.410634746779325,"High-blockage label: NLOS, PDR <= 0.70, or delay exceeds deadline."
+utility_required_protection_activation_pos,0.45,0.62527317394173,Lower-quartile position-risk level among degraded-position samples.,9149,30050,NaN,"This controls when protection demand starts increasing from position risk."
+utility_required_protection_activation_blind,0.22,0.114903302247584,Lower-quartile excess-blindness level among high-blockage samples.,8477,30050,NaN,"This controls when protection demand starts increasing from blind-zone risk."

@@ -1,0 +1,10 @@
+Category,SourceType,EvidenceStrength,PaperClaimAllowed,PaperClaimForbidden
+Scenario trajectory and topology,V2X-Seq scene metadata + generated scenario,Medium,"Data-informed simulation scenarios",Do not claim real field driving experiment
+PER lookup physical layer,External PER tables,Medium-High,"PER-table-calibrated physical-layer lookup",Do not claim forest-measured V2X PER validation
+Default physical deadlines,Engineering safety-deadline setting,Medium,"Deadline-constrained safety-message evaluation",Do not claim regulatory deadline certification
+Forest pathloss and attenuation,Forestry data statistics + literature-guided monotonic mapping,Medium,"Forestry-data-informed attenuation model",Do not claim direct electromagnetic fitting
+GNSS / positioning degradation,Vegetation raster + point-cloud proxy mapping,Medium,"Canopy-informed positioning degradation model",Do not claim measured GNSS receiver calibration
+Risk-constrained objective weights,Frozen engineering Lagrangian weights,Medium-Low,"Risk-constrained online finite-action scheduler with frozen parameters",Do not claim globally optimal weights
+DCC-like literature baseline,Literature-inspired standard-style baseline,Medium,"ETSI-DCC-style comparison baseline",Do not claim full ETSI stack implementation
+AoI-aware literature baseline,Literature-inspired freshness baseline,Medium,"AoI-aware comparison baseline",Do not claim full AoI theory optimum
+Constrained Oracle,Bounded-action diagnostic reference,DiagnosticOnly,"Constrained oracle, not global optimum",Do not call it an unconstrained global oracle

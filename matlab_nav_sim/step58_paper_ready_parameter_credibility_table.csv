@@ -1,0 +1,34 @@
+RecordType,Item,SourceOrDefault,EvidenceStrength,ForestGeometryValue,SourceNote,AllowedWording,ForbiddenWording
+Category,Scenario trajectory and topology,"V2X-Seq scene metadata + generated scenario",Medium,"","","Data-informed simulation scenarios",Do not claim real field driving experiment
+Category,PER lookup physical layer,"External PER tables",Medium-High,"","","PER-table-calibrated physical-layer lookup",Do not claim forest-measured V2X PER validation
+Category,Default physical deadlines,"Engineering safety-deadline setting",Medium,"","","Deadline-constrained safety-message evaluation",Do not claim regulatory deadline certification
+Category,Forest pathloss and attenuation,"Forestry data statistics + literature-guided monotonic mapping",Medium,"","","Forestry-data-informed attenuation model",Do not claim direct electromagnetic fitting
+Category,GNSS / positioning degradation,"Vegetation raster + point-cloud proxy mapping",Medium,"","","Canopy-informed positioning degradation model",Do not claim measured GNSS receiver calibration
+Category,Risk-constrained objective weights,"Frozen engineering Lagrangian weights",Medium-Low,"","","Risk-constrained online finite-action scheduler with frozen parameters",Do not claim globally optimal weights
+Category,DCC-like literature baseline,"Literature-inspired standard-style baseline",Medium,"","","ETSI-DCC-style comparison baseline",Do not claim full ETSI stack implementation
+Category,AoI-aware literature baseline,"Literature-inspired freshness baseline",Medium,"","","AoI-aware comparison baseline",Do not claim full AoI theory optimum
+Category,Constrained Oracle,"Bounded-action diagnostic reference",DiagnosticOnly,"","","Constrained oracle, not global optimum",Do not call it an unconstrained global oracle
+KeyParameter,deadline_normal,"0.5",,"0.5","Physical safety-message deadline setting used consistently across final PER lookup evidence","",
+KeyParameter,deadline_coop,"0.18",,"0.2","Physical safety-message deadline setting used consistently across final PER lookup evidence","",
+KeyParameter,deadline_emergency,"0.07",,"0.077","Physical safety-message deadline setting used consistently across final PER lookup evidence","",
+KeyParameter,final_physical_pdr_mode,"per_lookup_forced_step49_step50_step54",,"per_lookup_forced_step49_step50_step54","Final Step49, Step50, and Step54 scripts explicitly force params.physical_pdr_mode to per_lookup","",
+KeyParameter,pathloss_los_exponent,"20",,"28.5","Forest calibration: road curvature 0.1947, veg density 1.000","",
+KeyParameter,pathloss_nlos_exponent,"24",,"37.5","Forest calibration: road curvature 0.1947, veg density 1.000","",
+KeyParameter,nlosv_extra_loss_dB,"5",,"7","Forest calibration: road curvature 0.1947, veg density 1.000","",
+KeyParameter,position_gnss_independent_noise_std,"0.08",,"0.13394","Canopy proxy: point-cloud density 0.775, veg attenuation 1.000","",
+KeyParameter,position_gnss_multipath_noise_std,"0.12",,"0.2099","Canopy proxy: point-cloud density 0.775, veg attenuation 1.000","",
+KeyParameter,utility_blind_protection_threshold,"0.58",,"0.49","Default project parameter","",
+KeyParameter,utility_blind_pos_threshold,"0.48",,"0.53596","Default project parameter","",
+KeyParameter,objective_timely_lambda,"3.20",,"3.20","Objective default: risk_constrained_timely_lambda = 3.20 in compute_action_risk_constrained_objective_v4","",
+KeyParameter,objective_success_lambda,"2.20",,"2.20","Objective default: risk_constrained_success_lambda = 2.20 in compute_action_risk_constrained_objective_v4","",
+KeyParameter,risk_v4_actual_cost_weight,"0.060",,"0.060","V6 default actual-cost weight: 0.060 if not provided","",
+KeyParameter,risk_v6_emergency_floor,"priority>=3, rate>=2.1x",,"priority>=3, rate>=2.1x","V6 emergency floor: priority >= 3 and rate multiplier >= 2.1 when urgency is emergency-level","",
+KeyParameter,dcc_cbr_low_threshold,"0.25",,"0.25","DCC-style congestion threshold used as literature-inspired baseline parameter","",
+KeyParameter,dcc_cbr_high_threshold,"0.65",,"0.65","DCC-style congestion threshold used as literature-inspired baseline parameter","",
+KeyParameter,aoi_age_norm_cap,"8",,"8","AoI-aware freshness baseline parameter","",
+KeyParameter,aoi_critical_threshold,"0.8",,"0.8","AoI-aware freshness baseline parameter","",
+ClaimBoundary,The final physical-layer evidence uses PER lookup.,"",,"","","PER-table-calibrated physical-layer lookup",real forest V2X measurement validation
+ClaimBoundary,Forest geometry parameters are data-informed.,"",,"","","forestry-data-informed simulation",fully realistic forest propagation model
+ClaimBoundary,Risk-constrained-v6 is frozen for Step49-58.,"",,"","","frozen-parameter validation",globally optimal or adaptively tuned after seeing test scenes
+ClaimBoundary,DCC-like and AoI-aware are literature-inspired baselines.,"",,"","","ETSI-DCC-style and AoI-aware baseline comparisons",complete standards-compliant DCC stack or optimal AoI policy
+ClaimBoundary,Negative cases 10019/10013 are applicability boundaries.,"",,"","","boundary cases caused by deadline-reliability/cost trade-off",hide in averages or tune away the negative cases
