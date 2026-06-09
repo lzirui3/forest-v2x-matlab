@@ -2,9 +2,15 @@ function [objective_value, aux, meta] = compute_action_risk_constrained_objectiv
     urgency, q_link, q_pos, action, relay_available, base_rate, params, event_state, context)
 %COMPUTE_ACTION_RISK_CONSTRAINED_OBJECTIVE Soft constrained-risk action objective.
 %
-% The objective is the Lagrangian form of a finite-action scheduling problem:
+% This is a WEIGHTED SOFT-PENALTY score for a finite-action scheduling problem:
 % maximize value-weighted timely delivery while penalizing communication cost
-% and violations of reliability, timely, deadline, and protection constraints.
+% and soft violations of the reliability, timely, deadline, and protection
+% constraints. NOTE: the violation weights are FIXED design weights, not KKT
+% dual variables, and there is no dual update -- so this is NOT a Lagrangian in
+% the optimization sense and carries no feasibility/optimality certificate. The
+% principled drift-plus-penalty replacement (time-varying virtual queues that
+% DO carry those certificates) lives in run_step9_proposed_method_dpp /
+% build_dpp_action_tables.
 
 if nargin < 9 || isempty(context)
     context = struct();
@@ -33,7 +39,9 @@ reward = info_value * aux.timely_prob ...
     + paramsafe(params, 'risk_constrained_success_reward_weight', 0.45) * aux.success_prob ...
     + paramsafe(params, 'risk_constrained_event_reward_weight', 0.12) * aux.event_gain;
 
-lagrangian_penalty = paramsafe(params, 'risk_constrained_timely_lambda', 3.20) * timely_violation ...
+% Weighted soft-penalty on constraint violations (fixed design weights, NOT
+% dual variables -- see header). Deprecated in favour of the DPP virtual queues.
+soft_penalty = paramsafe(params, 'risk_constrained_timely_lambda', 3.20) * timely_violation ...
     + paramsafe(params, 'risk_constrained_success_lambda', 2.20) * success_violation ...
     + paramsafe(params, 'risk_constrained_deadline_lambda', 1.25) * deadline_violation ...
     + paramsafe(params, 'risk_constrained_protection_lambda', 1.60) * protection_violation ...
@@ -46,7 +54,7 @@ regularization = paramsafe(params, 'risk_constrained_cost_weight', 0.055) * aux.
     + paramsafe(params, 'risk_constrained_relay_penalty_weight', 0.06) * aux.relay_penalty ...
     + aux.support_mismatch_penalty;
 
-objective_value = regularization + lagrangian_penalty - reward;
+objective_value = regularization + soft_penalty - reward;
 
 meta.required_timely = required_timely;
 meta.required_success = required_success;
@@ -61,7 +69,7 @@ meta.deadline_violation = deadline_violation;
 meta.protection_violation = protection_violation;
 meta.position_violation = position_violation;
 meta.reward = reward;
-meta.lagrangian_penalty = lagrangian_penalty;
+meta.soft_penalty = soft_penalty;
 meta.regularization = regularization;
 end
 

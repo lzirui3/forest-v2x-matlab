@@ -14,7 +14,11 @@ gate_threshold = params.link_gate_weight * (1.0 - q_link) ...
     - mode_gate_bonus ...
     - params.priority_gate_bonus * (action.priority - 1);
 
-if urgency >= 0.80
+emg_thr = 0.80;
+if isfield(params, 'utility_emergency_urgency_threshold')
+    emg_thr = params.utility_emergency_urgency_threshold;  % bind to sweepable param (was hardcoded 0.80)
+end
+if urgency >= emg_thr
     gate_threshold = gate_threshold - params.emergency_gate_reduction;
 end
 

@@ -1,5 +1,16 @@
 # 仿真参数调整分析：如何制造方法间有意义的性能差异
 
+> ⚠️ **诚信隔离声明（2026 审计补充，必读）**
+> 本文档讨论的是**抽象投递模型**（`use_physical_delivery=false` 时的 gate/bonus 权重，
+> 如 `critical_priority_bonus`、`priority_gate_bonus`、`link_gate_weight`、`base_success_bias`）
+> 的调参，目的是在 smoke 测试里制造可观察的方法间差异。
+> **这些数值不得作为方法优越性的证据。** 生产/论文路径已切换为**物理 PER 查表投递**
+> （`use_physical_delivery=true` + `physical_pdr_mode="per_lookup"`，见
+> `run_step9_proposed_method_dpp` / `simulate_step9_delivery_physical`），届时本文档所调的
+> ~20 个抽象权重**完全离开活动路径**。本文档仅保留为历史 smoke-test 记录，
+> 任何性能差异结论以物理投递下的 per_lookup 验证（step47/49/50/54）为准。
+> 详见 `parameter_provenance_full_audit_cn.md` 第 4 章与 `parameter_tuning_analysis` 相关条目。
+
 ## 一、问题诊断：为什么所有方法 Emergency Timely Rate = 1.000
 
 ### 1.1 投递判定公式拆解

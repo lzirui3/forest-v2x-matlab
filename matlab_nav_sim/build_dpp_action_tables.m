@@ -268,6 +268,12 @@ function event_state = build_event_state(scenario, k)
 event_state.blind_zone_gate = 0.0;
 event_state.rsu_gain_gate = 0.0;
 event_state.env_correction_gate = 0.0;
+% Fused 1-sigma horizontal positioning error (already blind-zone-inflated):
+% drives the GNSS-integrity protection RHS (PL = k*sigma vs AL).
+event_state.coarse_sigma = NaN;
+if isfield(scenario, 'position_coarse_sigma')
+    event_state.coarse_sigma = scenario.position_coarse_sigma(k);
+end
 if isfield(scenario, 'blind_zone_gate')
     event_state.blind_zone_gate = scenario.blind_zone_gate(k);
 end

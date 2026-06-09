@@ -2,7 +2,11 @@ function success_prob = predict_action_success(urgency, q_link, q_pos, action, p
 %PREDICT_ACTION_SUCCESS Predict packet success probability for a candidate action.
 
 priority_bonus = params.abstract_priority_bonus_per_level * (action.priority - 1);
-if urgency >= 0.80
+emg_thr = 0.80;
+if isfield(params, 'utility_emergency_urgency_threshold')
+    emg_thr = params.utility_emergency_urgency_threshold;  % bind to sweepable param (was hardcoded 0.80)
+end
+if urgency >= emg_thr
     priority_bonus = priority_bonus + params.critical_priority_bonus;
 end
 

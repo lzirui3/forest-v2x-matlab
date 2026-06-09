@@ -103,7 +103,14 @@ else
 end
 cap = paramsafe(params, 'chance_risk_aoi_age_norm_cap', ...
     paramsafe(params, 'aoi_age_norm_cap', 8.0));
-value = min(max(age / max(cap, 1.0e-6), 0.0), 1.0);
+norm_age = min(max(age / max(cap, 1.0e-6), 0.0), 1.0);
+% Non-linear age penalty g(Delta) (Sun, Uysal-Biyikoglu, Yates, Koksal, Shroff,
+% IEEE T-IT 2017): the value of an update is a non-decreasing, typically CONVEX
+% function of age, so staleness is penalized super-linearly. Power form
+% g = norm_age^exponent with exponent > 1; exponent = 1 recovers the previous
+% linear normalization. (Was linear; see parameter_provenance audit S6.)
+exponent = paramsafe(params, 'aoi_age_penalty_exponent', 2.0);
+value = norm_age ^ max(exponent, 1.0e-6);
 end
 
 function actual_tx_cost = compute_actual_tx_cost_local(action, params)

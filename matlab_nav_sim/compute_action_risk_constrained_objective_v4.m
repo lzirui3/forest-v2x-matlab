@@ -4,6 +4,15 @@ function [objective_value, aux, meta] = compute_action_risk_constrained_objectiv
 %
 % Step35 side-copy. Compared with Step31, the communication-cost term is
 % aligned with the physical delivery metric: mode_cost * tx_rate.
+%
+% TERMINOLOGY (de-overclaim): the violation term below is a WEIGHTED SOFT-PENALTY
+% with FIXED design weights (risk_constrained_*_lambda) -- it is NOT a Lagrangian
+% in the optimization sense (no dual update, the weights are not KKT dual
+% variables) and carries no feasibility/optimality certificate. The principled
+% drift-plus-penalty replacement (time-varying virtual queues Z_c with the
+% O(1/V)-O(V) trade-off and a time-average feasibility certificate) lives in
+% run_step9_proposed_method_dpp / build_dpp_action_tables; this v4 objective is
+% retained as the deprecated frozen-weight baseline.
 
 if nargin < 9 || isempty(context)
     context = struct();
@@ -35,7 +44,7 @@ reward = info_value * aux.timely_prob ...
     + paramsafe(params, 'risk_constrained_success_reward_weight', 0.45) * aux.success_prob ...
     + paramsafe(params, 'risk_constrained_event_reward_weight', 0.12) * aux.event_gain;
 
-lagrangian_penalty = paramsafe(params, 'risk_constrained_timely_lambda', 3.20) * timely_violation ...
+soft_penalty = paramsafe(params, 'risk_constrained_timely_lambda', 3.20) * timely_violation ...
     + paramsafe(params, 'risk_constrained_success_lambda', 2.20) * success_violation ...
     + paramsafe(params, 'risk_constrained_deadline_lambda', 1.25) * deadline_violation ...
     + paramsafe(params, 'risk_constrained_protection_lambda', 1.60) * protection_violation ...
@@ -48,7 +57,7 @@ regularization = paramsafe(params, 'risk_v4_actual_cost_weight', 0.035) * actual
     + paramsafe(params, 'risk_constrained_relay_penalty_weight', 0.06) * aux.relay_penalty ...
     + aux.support_mismatch_penalty;
 
-objective_value = regularization + lagrangian_penalty - reward;
+objective_value = regularization + soft_penalty - reward;
 
 meta.required_timely = required_timely;
 meta.required_success = required_success;
@@ -63,7 +72,7 @@ meta.deadline_violation = deadline_violation;
 meta.protection_violation = protection_violation;
 meta.position_violation = position_violation;
 meta.reward = reward;
-meta.lagrangian_penalty = lagrangian_penalty;
+meta.soft_penalty = soft_penalty;
 meta.regularization = regularization;
 meta.actual_tx_cost = actual_tx_cost;
 end

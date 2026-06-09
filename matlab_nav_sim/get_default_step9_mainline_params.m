@@ -8,6 +8,10 @@ params.deadline_normal = params.deadline_normal_physical;
 params.deadline_coop = params.deadline_coop_physical;
 params.deadline_emergency = params.deadline_emergency_physical;
 params.use_physical_delivery = true;
+% Production uses the RAW measured WiLab PER curves (most-grounded SINR->PDR map),
+% not the fitted sigmoid. Feeds BOTH the scenario q_link generation and the final
+% delivery KPI. Matches the per_lookup validation track (main_step47/49/50/54).
+params.physical_pdr_mode = "per_lookup";
 params = local_apply_physical_delivery_guard(params);
 end
 

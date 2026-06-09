@@ -209,8 +209,17 @@ params.fading_sigma_dB = 5.0;       % shadow fading std dev in dB
 params.delay_jitter_scale = 0.15;   % delay jitter as fraction of nominal delay
 params.enable_stochastic = true;    % set false to revert to deterministic model
 
-% Phase 4: Physical delivery model parameters
-params.use_physical_delivery = false;  % false = backward compatible
+% Phase 4: Physical delivery model parameters.
+%   The base/smoke default keeps the abstract delivery model + "sigmoid" PER map
+%   so the lightweight CI path and every existing base-default smoke script stays
+%   numerically unperturbed (note: physical_pdr_mode also feeds the scenario
+%   q_link map via step9_generate_link_state_wilab_like, so it is NOT inert).
+%   The PRODUCTION mainline (get_default_step9_mainline_params) enables physical
+%   delivery AND switches physical_pdr_mode to "per_lookup" -- the RAW measured
+%   WiLabV2Xsim PER curves (griddedInterpolant over PER_*.txt), the most-grounded
+%   SINR->PDR map (no fitted pdr_midpoint/slope), as used by the per_lookup
+%   validation track (main_step47/49/50/54).
+params.use_physical_delivery = false;
 params.physical_pdr_mode = "sigmoid";
 
 % Priority / emergency SINR gain (resource allocation advantage)
@@ -264,6 +273,78 @@ params.pdr_slope_nlos = 0.7;
 params.deadline_normal_physical = 0.50;
 params.deadline_coop_physical = 0.18;
 params.deadline_emergency_physical = 0.070;
+
+% V2X reliability-constraint operational floors -- the binding RHS of the DPP
+% reliability constraint (get_v2x_reliability_requirements.m). The standardized
+% TS 22.186 reliability tiers are 0.90 / 0.9999 / 0.99999; the abstracted PHY
+% cannot reach the two upper tiers (timely ceiling ~0.97), so the scheduler is
+% evaluated against these explicit OPERATIONAL FLOORS and the openly-reported
+% derating = tier - floor (StandardsDerivable tier, engineering-chosen floor).
+% These values equal the previous silent paramsafe fallbacks, so defining them
+% here is numerically inert -- it only removes the un-audited silent fallback.
+params.v2x_reliability_floor_normal = 0.50;
+params.v2x_reliability_floor_coop = 0.65;
+params.v2x_reliability_floor_emergency = 0.80;
+
+% GNSS-integrity-grounded protection-constraint RHS (replaces the hand-picked
+% affine utility_required_protection_* family on the DPP path; see
+% compute_required_protection_level.m and parameter_provenance_full_audit_cn.md
+% sec.3.4). The required action protection scales with the navigation INTEGRITY
+% DEFICIT: a protection level PL = k*sigma (k-sigma of the fused 1-sigma
+% horizontal error coarse_sigma, which already includes the blind-zone inflation)
+% versus a per-message-class ALERT LIMIT AL. PL <= AL => no protection required;
+% PL > AL => required protection grows with the normalized exceedance.
+%   integrity_k_sigma = 2.45  : k-sigma protection level. k = sqrt(-2*ln(IR))
+%                               under a 2D-Rayleigh horizontal-error model with
+%                               IR = 0.05 => k = 2.45 (R95, 95% horizontal
+%                               containment). NOTE: this is the dimensionally-
+%                               correct 2D-Rayleigh quantile (not the 1D Gaussian
+%                               one); raise k (smaller IR) for stricter integrity.
+%   integrity_alert_limit_*   : alert limits from the AV-integrity literature
+%                               (~0.5-10 m band). These cooperative-awareness /
+%                               hazard-warning messages need which-vehicle /
+%                               which-segment positioning, NOT lane-keeping
+%                               control, so the WARNING-tier limits (3/5/8 m) are
+%                               used, not the tighter lane-control tier (1.5/3/5).
+% Only protection_integrity_scale (exceedance->protection gain) and the [0,max]
+% saturation remain engineering; sigma, k and AL are grounded/literature.
+% On the production path this gives timely 0.992 / loss 0.008 at +5% cost vs the
+% legacy affine RHS (see audit_mainline_matrix / S4 sweep), and replaces the six
+% hand-picked utility_required_protection_* coefficients with PL = k*sigma vs AL.
+params.protection_use_integrity = true;
+params.integrity_k_sigma = 2.45;
+params.integrity_alert_limit_lane = 3.0;   % m, emergency / warning-tier
+params.integrity_alert_limit_coop = 5.0;   % m, cooperative / warning-tier
+params.integrity_alert_limit_road = 8.0;   % m, normal / coarse-awareness
+params.protection_integrity_scale = 0.55;  % normalized exceedance -> required protection
+
+% --- DPP penalty: dimensionless MRS preference weights & VoI (Howard 1966) ---
+% These are NOT physically derivable; honest treatment per Marler & Arora (2004)
+% is to report ELICITED RATIOS + a sensitivity sweep (audit_sensitivity_sweep.m),
+% NOT a fabricated citation. Promoted here from scattered paramsafe defaults so
+% they are auditable AND sweepable (values UNCHANGED from the prior DPP defaults;
+% this also unifies risk_v4_actual_cost_weight, which previously defaulted to
+% 0.035 in the deprecated v6 objective vs 0.060 on the DPP path -> now 0.060).
+% Elicited cost/penalty ratio misdecision:position:delay:cost:relay
+%   = 0.28:0.20:0.08:0.060:0.06  ~  4.7:3.3:1.3:1.0:1.0.
+params.risk_v4_actual_cost_weight = 0.060;
+params.risk_constrained_delay_weight = 0.08;
+params.risk_constrained_position_risk_weight = 0.20;
+params.risk_constrained_misdecision_weight = 0.28;
+params.risk_constrained_relay_penalty_weight = 0.06;
+% Reward weights (value of timely / successful / event delivery).
+params.risk_constrained_success_reward_weight = 0.45;
+params.risk_constrained_event_reward_weight = 0.12;
+% Value-of-Information (Howard 1966 VPI form): info_value = bias + slopes*risks,
+% saturated to [min,max]. The FORM is grounded (VPI); intercept/slopes/guards are
+% engineering and are reported with the sweep, not derived.
+params.risk_constrained_voi_bias = 0.65;
+params.risk_constrained_voi_urgency_scale = 0.70;
+params.risk_constrained_voi_pos_scale = 0.24;
+params.risk_constrained_voi_link_scale = 0.14;
+params.risk_constrained_voi_blind_scale = 0.28;
+params.risk_constrained_voi_min = 0.50;
+params.risk_constrained_voi_max = 1.90;
 
 % Rural/forest-oriented physical link defaults.
 % Provenance (verified, see parameter_theoretical_grounding_audit_cn.md sec. 3.5):
@@ -340,6 +421,10 @@ params.dcc_emergency_priority = 3;
 params.dcc_coop_priority = 2;
 params.dcc_direct_mode_threshold = 0.30;
 params.aoi_age_norm_cap = 8.0;
+% Non-linear age-penalty exponent g(Delta)=norm_age^exponent (Sun et al. T-IT
+% 2017): convex staleness penalty for the chance-risk-AoI scheduler. exponent=1
+% recovers the old linear age/cap; 2.0 = quadratic (reported + sweepable).
+params.aoi_age_penalty_exponent = 2.0;
 params.aoi_high_threshold = 0.55;
 params.aoi_critical_threshold = 0.80;
 params.aoi_default_mode = 0;

@@ -52,8 +52,12 @@ calib.pathloss_nlos_exponent = 10.0 * alpha_nlos_linear;
 calib.pathloss_los_offset_dB = 46.5 + 1.8 * veg_stats.cover_density_norm;
 calib.pathloss_nlos_offset_dB = calib.pathloss_los_offset_dB + 3.0 + 1.6 * veg_stats.cover_density_norm;
 
-% Vegetation attenuation and blockage severity
-calib.nlosv_extra_loss_dB = 3.5 + 3.5 * veg_stats.attenuation_norm;
+% Vegetation attenuation and blockage severity.
+% Re-anchored so the affine ENDPOINTS hit the TR 37.885 sec.6.2.1 NLOSv blockage
+% means: attenuation_norm=0 -> mu=5 dB (single blocker), =1 -> mu=9 dB (high
+% blockage). (Was 3.5+3.5*norm spanning 3.5..7, which hit neither standard
+% anchor.) NOTE: changes forest-geometry calibrated scenarios -> re-run those.
+calib.nlosv_extra_loss_dB = 5.0 + 4.0 * veg_stats.attenuation_norm;
 calib.blind_link_loss_scale_dB = 4.5 + 3.0 * veg_stats.cover_density_norm;
 calib.blind_interference_scale_dB = 1.8 + 1.4 * veg_stats.attenuation_norm;
 calib.interference_scale = 1.6 + 0.7 * veg_stats.cover_density_norm;
