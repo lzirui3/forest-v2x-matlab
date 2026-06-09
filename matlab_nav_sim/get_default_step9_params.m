@@ -251,12 +251,42 @@ params.pdr_midpoint_nlos = 6.0;
 params.pdr_slope_los = 0.9;
 params.pdr_slope_nlos = 0.7;
 
-% Physical deadlines
+% Physical deadlines.
+% Re-anchored to standardized V2X latency requirements, expressed as explicit
+% engineering-margin multiples of the standard value (NOT clause values):
+%   normal     : 0.50 s  ~= 5x  the TS 22.185 general 100 ms latency
+%                          (or the ETSI EN 302 637-2 CAM staleness bound ~0.5-1.0 s)
+%   coop       : 0.18 s  ~= 1.8x the TS 22.186 cooperative 100 ms latency
+%   emergency  : 0.070 s ~= 1.4x the ETSI TR 102 638 pre-crash 50 ms warning
+% Margins (>1x) reflect end-to-end stack + forest-channel slack beyond the raw
+% air-interface requirement. See get_v2x_reliability_requirements.m for the
+% paired reliability tiers, and parameter_theoretical_grounding_audit_cn.m.
 params.deadline_normal_physical = 0.50;
 params.deadline_coop_physical = 0.18;
 params.deadline_emergency_physical = 0.070;
 
-% Rural/forest-oriented physical link defaults
+% Rural/forest-oriented physical link defaults.
+% Provenance (verified, see parameter_theoretical_grounding_audit_cn.md sec. 3.5):
+%   tx_power_dBm = 23  : C-V2X UE Power Class 3 max output (3GPP TS 36.101).
+%   noise_floor_dBm = -94 : thermal floor -174 dBm/Hz + 10*log10(10e6 Hz)
+%                           + 10 dB receiver noise figure = -94 dBm (10 MHz BW).
+%   pathloss_los_offset_dB = 47 : free-space loss at 1 m, 5.9 GHz,
+%                           20*log10(4*pi*fc/c) = 47.8 dB (Friis); equivalently
+%                           the 3GPP TR 37.885 LOS intercept 32.4 + 20*log10(fc[GHz]).
+%   pathloss_los_exponent = 20  : path-loss exponent n_LOS = 2.0 (free-space /
+%                           TR 37.885 highway-LOS), stored as 10*n in dB/decade.
+%   pathloss_nlos_exponent = 24 : n_NLOS = 2.4, within the TR 38.901 RMa-NLOS
+%                           range n in [2.7, 3.9] floor side; rural NLOS.
+%   nlosv_extra_loss_dB = 5 : TR 37.885 sec. 6.2.1 vehicle-blockage (NLOSv) extra
+%                           loss, mu = 5 dB single blocker / 9 dB high blockage,
+%                           sigma = 4-4.5 dB. (Forest calibration scales 3.5..7.)
+% NOTE on shadow fading attribution (do not mis-state in the paper): TR 37.885
+% LOS shadow-fading sigma = 3 dB, and NLOSv REUSES the LOS shadowing (3 dB); the
+% 4 dB figure belongs to the NLOS row's shadow fading, while 4/4.5 dB is the
+% NLOSv blockage log-normal sigma -- NOT an "NLOSv shadow fading = 4 dB".
+% NOTE on vegetation models: at 5.9 GHz use ITU-R P.833 / Weissberger
+% (L = 1.33*f^0.284*d^0.588, 230 MHz-95 GHz). COST 235 (9.6-57.6 GHz) and
+% FITU-R (10-40 GHz) do NOT cover 5.9 GHz and must not be cited as the basis.
 params.tx_power_dBm = 23.0;
 params.noise_floor_dBm = -94.0;
 params.pathloss_los_offset_dB = 47.0;
