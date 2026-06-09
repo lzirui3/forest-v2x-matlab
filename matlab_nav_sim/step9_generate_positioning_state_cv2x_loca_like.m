@@ -16,7 +16,7 @@ rsu_y = params.position_rsu_y(:)';
 rsu_cov = params.position_rsu_coverage(:)';
 num_rsu = numel(rsu_x);
 
-gnss_score_raw = compute_positioning_confidence_rule(n_sat, dop, sigma_pos, dt_upd);
+gnss_score_raw = compute_positioning_confidence_rule(n_sat, dop, sigma_pos, dt_upd, params);
 
 % 添加 GNSS 独立噪声源（电离层闪烁 + GNSS 多径反射）
 % 这些物理过程与 C-V2X sidelink 无线电链路无关，提供真正的独立信息

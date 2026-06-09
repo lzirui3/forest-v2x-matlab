@@ -23,7 +23,7 @@ pdr = link.pdr;
 delay = link.delay;
 loss = link.loss;
 
-q_pos_rule = compute_positioning_confidence_rule(n_sat, dop, sigma_pos, dt_upd);
+q_pos_rule = compute_positioning_confidence_rule(n_sat, dop, sigma_pos, dt_upd, params);
 if external.has_rsu
     params.position_rsu_x = external.rsu.x;
     params.position_rsu_y = external.rsu.y;

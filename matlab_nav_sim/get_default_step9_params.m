@@ -32,9 +32,13 @@ params.tx_cost_direct = 1.0;
 params.tx_cost_redundant = 1.6;
 params.tx_cost_relay = 1.8;
 
-params.deadline_normal = 0.50;
-params.deadline_coop = 0.24;
-params.deadline_emergency = 0.088;
+% Active deadlines are kept in sync with the standards-anchored *_physical values
+% (defined later in this file). This removes the earlier smoke-tuned 0.24/0.088
+% (manufactured by parameter_tuning_analysis). The production mainline also sets
+% deadline_* from *_physical, so this only unifies the base/smoke path.
+params.deadline_normal = 0.50;     % = deadline_normal_physical
+params.deadline_coop = 0.18;       % = deadline_coop_physical (was 0.24, smoke-tuned)
+params.deadline_emergency = 0.070; % = deadline_emergency_physical (was 0.088, smoke-tuned)
 
 params.base_delay = 0.05;
 params.link_delay_scale = 0.45;
@@ -345,6 +349,28 @@ params.risk_constrained_voi_link_scale = 0.14;
 params.risk_constrained_voi_blind_scale = 0.28;
 params.risk_constrained_voi_min = 0.50;
 params.risk_constrained_voi_max = 1.90;
+
+% --- DPP proposed-method knobs (promoted from the setdefault() in
+% run_step9_proposed_method_dpp / build_dpp_action_tables so they are auditable
+% AND sweepable; values identical to those defaults -> promotion is numerically
+% inert, the runner's setdefault keeps the value already present here). ---
+params.dpp_V = 2.0;                            % drift-plus-penalty knob (O(1/V)-O(V))
+params.dpp_horizon = 1;                        % MPC look-ahead (1 = plain DPP)
+params.dpp_queue_max = 20.0;                   % virtual-queue cap = max shadow price (Lindley)
+params.dpp_constraint_mode = "consolidated";   % 2 constraints (reliability + protection)
+params.dpp_reliability_voi_scaled = false;
+params.dpp_reliability_band = 0.30;
+params.dpp_reliability_reachable_cap = 0.97;
+params.risk_v6_emergency_min_priority = 3;     % emergency action floor (priority)
+params.risk_v6_emergency_min_rate_multiplier = 2.1;  % emergency action floor (rate)
+
+% q_pos confidence-rule blend weights (promoted from the hardcoded 0.25/0.25/0.30/
+% 0.20 in compute_positioning_confidence_rule; FORM groundable, split engineering;
+% values unchanged -> inert, now auditable + sweepable).
+params.qpos_weight_sat = 0.25;
+params.qpos_weight_dop = 0.25;
+params.qpos_weight_sigma = 0.30;
+params.qpos_weight_update = 0.20;
 
 % Rural/forest-oriented physical link defaults.
 % Provenance (verified, see parameter_theoretical_grounding_audit_cn.md sec. 3.5):

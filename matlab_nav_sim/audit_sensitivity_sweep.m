@@ -27,8 +27,12 @@ specs = {
  'risk_constrained_voi_bias',             'mul', 0.7, 1.3
  'risk_constrained_voi_urgency_scale',    'mul', 0.7, 1.3
  'dpp_V',                                 'abs', 1.0, 4.0
+ 'dpp_queue_max',                         'abs', 10.0, 30.0
+ 'dpp_horizon',                           'abs', 1, 2
  'integrity_k_sigma',                     'abs', 2.0, 3.0
  'protection_integrity_scale',            'mul', 0.7, 1.3
+ 'qpos_weight_sigma',                     'mul', 0.7, 1.3
+ 'qpos_weight_sat',                       'mul', 0.7, 1.3
 };
 
 names = {}; vlo = []; vhi = []; Tlo = []; Thi = []; Clo = []; Chi = [];
