@@ -33,6 +33,9 @@ for si = 1:nseeds
             fprintf(2, '  seed %d / %s failed: %s\n', s, methods{mi, 1}, ME.message);
         end
     end
+    fprintf('  [%d/%d] seed %d done: Proposed Timely=%.4f Cost=%.4f\n', ...
+        si, nseeds, s, KPI(si, 1, 1), KPI(si, 1, 3));
+    save('audit_multiseed_partial.mat', 'KPI', 'seeds');
 end
 
 fprintf('=== Multi-seed validation (%d seeds, mainline DPP per_lookup) ===\n', nseeds);
