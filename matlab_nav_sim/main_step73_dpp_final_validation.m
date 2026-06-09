@@ -9,7 +9,7 @@ seeds = 1:num_seeds;
 mnames = ["Fixed", "Link-delay", "v6 (frozen-lambda)", "DPP (V2,cap20)", "PDPP H3"];
 nM = numel(mnames);
 
-[~, params] = evalc('get_forest_geometry_mainline_params()'); %#ok<ASGLU>
+[~, params] = evalc('get_forest_geometry_mainline_params()');
 scenarios = cell(num_seeds, 1);
 for si = 1:num_seeds
     p = params; p.random_seed = seeds(si);

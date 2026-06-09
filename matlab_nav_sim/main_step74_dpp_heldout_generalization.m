@@ -34,7 +34,7 @@ dT = zeros(nR, 1); pT = zeros(nR, 1); dC = zeros(nR, 1);
 
 for ri = 1:nR
     Regime(ri) = regimes{ri, 1};
-    [~, params] = evalc('feval(regimes{ri, 2})'); %#ok<ASGLU>
+    [~, params] = evalc('feval(regimes{ri, 2})');
     params.physical_pdr_mode = pdr_mode;
     scenarios = cell(num_seeds, 1);
     for si = 1:num_seeds
@@ -78,7 +78,7 @@ try
     writetable(Tbl, csv_name);
     fprintf('Wrote %s\n', csv_name);
 catch ME
-    warning('Could not write CSV: %s', ME.message);
+    warning(ME.identifier, '%s', ME.message);
 end
 fprintf(['Reading: on every HELDOUT regime, if dTimely is within noise (p>0.05) or positive,\n' ...
     'the principled frozen DPP generalizes as well as / better than the hand-tuned v6.\n']);

@@ -16,8 +16,6 @@ for si = 1:num_seeds
     if si == 1, params0 = p; end
 end
 
-idx_pd = @(sc) (sc.t >= 68) & (sc.t < 90);
-
 % v6 reference.
 v6t = zeros(num_seeds, 1); v6c = zeros(num_seeds, 1);
 for si = 1:num_seeds

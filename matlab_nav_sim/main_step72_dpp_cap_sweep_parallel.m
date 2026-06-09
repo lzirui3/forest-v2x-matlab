@@ -7,7 +7,7 @@ seeds = 1:num_seeds;
 caps = [20, 30, 40, 60];
 nC = numel(caps);
 
-[~, params] = evalc('get_forest_geometry_mainline_params()'); %#ok<ASGLU>
+[~, params] = evalc('get_forest_geometry_mainline_params()');
 scenarios = cell(num_seeds, 1);
 for si = 1:num_seeds
     p = params; p.random_seed = seeds(si);
